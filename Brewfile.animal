@@ -1,0 +1,162 @@
+tap "aws/tap"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "nodenv/nodenv"
+tap "scottylogan/brewhouse"
+tap "weaveworks/tap"
+# Automatic configure script builder
+brew "autoconf"
+# Collection of over 500 reusable autoconf macros
+brew "autoconf-archive"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Use AWS IAM credentials to authenticate to Kubernetes
+brew "aws-iam-authenticator"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Arbitrary precision numeric processing language
+brew "bc"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Freely available high-quality data compressor
+brew "bzip2"
+# Cross-platform make
+brew "cmake"
+# Manage local application configuration files using templates
+brew "confd"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
+# Text processing system for reStructuredText
+brew "docutils"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# GNU awk utility
+brew "gawk"
+# Distributed revision control system
+brew "git"
+# Enable transparent encryption/decryption of files in a git repo
+brew "git-crypt"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# Open source suite of directory software
+brew "openldap"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Go version management
+brew "goenv"
+# Command-line Golang template processor
+brew "gomplate"
+# GNU grep, egrep and fgrep
+brew "grep"
+# GNU troff text-formatting system
+brew "groff"
+# Popular GNU data compression program
+brew "gzip"
+# Kubernetes package manager
+brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Network authentication protocol
+brew "krb5"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Let's Encrypt client and ACME library
+brew "lego"
+# Pager program similar to more
+brew "less"
+# Generic library support script
+brew "libtool"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Linux virtual machines
+brew "lima"
+# Utility to list open files
+brew "lsof"
+# Utility for directing compilation
+brew "make"
+# Text-to-HTML conversion tool
+brew "markdown"
+# Mac App Store command-line interface
+brew "mas"
+# Development kit for the Java programming language
+brew "openjdk"
+# Java-based project management
+brew "maven"
+# Open source relational database management system
+brew "mysql"
+# Manage multiple NodeJS versions
+brew "nodenv"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Client/server application for remote execution of tasks
+brew "remctl"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# User interface to the TELNET protocol
+brew "telnet"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
+# Extraction utility for .zip compressed archives
+brew "unzip"
+# Secures, stores, and tightly controls access to secrets
+brew "vault"
+# Internet file retriever
+brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
+# Check schema validity and signature of an XML document
+brew "xmlsectool"
+# EC2 Tools
+brew "scottylogan/brewhouse/ec2-tools"
+# Miscelleaneous Scripts
+brew "scottylogan/brewhouse/misc-scripts"
+# The official CLI for Amazon EKS
+brew "weaveworks/tap/eksctl"
+cask "font-sf-mono"
+# Tools to protect your emails and files
+cask "gpg-suite"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2@beta"
+# Team communication and collaboration software
+cask "slack"
+# Web browser
+cask "google-chrome"
+# Video communication and virtual meeting platform
+cask "zoom"
+# Backup and recovery software
+cask "crashplan"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Web debugging Proxy application
+cask "charles"
+mas "1Password 7", id: 1333542190
+mas "Keynote", id: 409183694
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Microsoft Excel", id: 462058435
