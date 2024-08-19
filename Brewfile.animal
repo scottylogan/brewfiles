@@ -12,10 +12,14 @@ brew "autoconf-archive"
 brew "automake"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
 # Arbitrary precision numeric processing language
 brew "bc"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -50,8 +54,6 @@ brew "git-crypt"
 brew "git-filter-repo"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
-# Open source suite of directory software
-brew "openldap"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
@@ -106,6 +108,8 @@ brew "mysql"
 brew "nodenv"
 # Development kit for the Java programming language
 brew "openjdk@17"
+# Open source suite of directory software
+brew "openldap"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Client/server application for remote execution of tasks
@@ -136,6 +140,13 @@ brew "scottylogan/brewhouse/ec2-tools"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Text editor
+cask "emacs"
+# Fonts
+cask "font-iosevka-nerd-font"
+cask "font-iosevka-slab"
+cask "font-iosevka-term-nerd-font"
+cask "font-iosevka-term-slab-nerd-font"
 cask "font-sf-mono"
 # Tools to protect your emails and files
 cask "gpg-suite"
