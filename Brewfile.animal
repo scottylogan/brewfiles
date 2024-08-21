@@ -103,7 +103,7 @@ brew "openjdk"
 # Java-based project management
 brew "maven"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Development kit for the Java programming language
