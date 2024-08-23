@@ -72,6 +72,8 @@ brew "gzip"
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Add GitHub support to git on the command-line
+brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Network authentication protocol
@@ -112,6 +114,8 @@ brew "openjdk@17"
 brew "openldap"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Show ps output as a tree
+brew "pstree"
 # Client/server application for remote execution of tasks
 brew "remctl"
 # Command-line tool for the Amazon S3 service
@@ -142,6 +146,12 @@ brew "scottylogan/brewhouse/ec2-tools"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Web debugging Proxy application
+cask "charles"
+# Backup and recovery software
+cask "crashplan"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Text editor
 cask "emacs"
 # Fonts
@@ -158,18 +168,15 @@ cask "iterm2@beta"
 cask "slack"
 # Web browser
 cask "google-chrome"
-# Video communication and virtual meeting platform
-cask "zoom"
-# Backup and recovery software
-cask "crashplan"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
-# Web debugging Proxy application
-cask "charles"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "1Password 7", id: 1333542190
 mas "Keynote", id: 409183694
-mas "Pages", id: 409201541
-mas "Numbers", id: 409203825
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Microsoft Excel", id: 462058435
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "WireGuard", id: 1451685025
