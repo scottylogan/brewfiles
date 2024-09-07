@@ -1,0 +1,232 @@
+tap "adoptopenjdk/openjdk"
+tap "aws/tap"
+tap "drone/drone"
+tap "go-swagger/go-swagger"
+tap "gromgit/fuse"
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-versions"
+tap "homebrew/command-not-found"
+tap "homebrew/services"
+tap "lifepillar/appleii"
+tap "osx-cross/arm"
+tap "osx-cross/avr"
+tap "osx-cross/openocd"
+tap "osx-cross/stm32"
+tap "puppetlabs/puppet"
+tap "railwaycat/emacsmacport"
+tap "riscv-software-src/riscv"
+tap "rosco-m68k/toolchain"
+tap "scottylogan/brewhouse"
+tap "su-et/tools"
+tap "vitorgalvao/tiny-scripts"
+tap "weaveworks/tap"
+# Arduino command-line interface
+brew "arduino-cli"
+# Atari MAC/65 compatible assembler for Unix
+brew "atasm"
+# Macro processing language
+brew "m4"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Assembler for the Atmel AVR microcontroller family
+brew "avra"
+# Atmel AVR MCU programmer
+brew "avrdude"
+# Use AWS IAM credentials to authenticate to Kubernetes
+brew "aws-iam-authenticator"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Platform built on V8 to build network applications
+brew "node"
+# Language Server for Bash
+brew "bash-language-server"
+# Arbitrary precision numeric processing language
+brew "bc"
+# GNU binary tools for native development
+brew "binutils"
+# Parser generator
+brew "bison"
+# Fish completion for brew-cask
+brew "brew-cask-completion"
+# GNU compiler collection
+brew "gcc"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Freely available high-quality data compressor
+brew "bzip2"
+# Scriptable network and serial communication for UNIX and VMS
+brew "c-kermit"
+# Curses-based interface to the GNU Debugger
+brew "cgdb"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Device firmware update based USB programmer for Atmel chips
+brew "dfu-programmer"
+# USB programmer
+brew "dfu-util"
+# Language server for Dockerfiles powered by Node, TypeScript, and VSCode
+brew "dockerfile-language-server"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# C++ template library for linear algebra
+brew "eigen"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# GNU awk utility
+brew "gawk"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# GNU debugger
+brew "gdb"
+# Modern, browser-based frontend to gdb (gnu debugger)
+brew "gdbgui"
+# Distributed revision control system
+brew "git"
+# Enable transparent encryption/decryption of files in a git repo
+brew "git-crypt"
+# Core application library for C
+brew "glib"
+# C code prettifier
+brew "gnu-indent"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Go version management
+brew "goenv"
+# Go n:m message multiplexer
+brew "gollum"
+# Command-line Golang template processor
+brew "gomplate"
+# Popular GNU data compression program
+brew "gzip"
+# Futuristic take on hexdump
+brew "hex"
+# Improved top (interactive process viewer)
+brew "htop"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Verilog simulation and synthesis tool
+brew "icarus-verilog"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# DNS library written in C
+brew "ldns"
+# Pager program similar to more
+brew "less"
+# Generic library support script
+brew "libtool"
+# Utility to list open files
+brew "lsof"
+# Cross-development tools for Motorola 6809 and Hitachi 6309
+brew "lwtools"
+# Utility for directing compilation
+brew "make"
+# Creates dependencies in makefiles
+brew "makedepend"
+# Text-to-HTML conversion tool
+brew "markdown"
+# Mac App Store command-line interface
+brew "mas"
+# Menu-driven communications program
+brew "minicom"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Open source relational database management system
+brew "mysql"
+# Netwide Assembler (NASM) is an 80x86 assembler
+brew "nasm"
+# Install NodeJS versions
+brew "node-build"
+# Manage multiple NodeJS versions
+brew "nodenv"
+# Network performance measurement tool
+brew "nuttcp"
+# Universal utility for programming FPGA
+brew "openfpgaloader"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Python version management
+brew "pyenv"
+# Terminal multiplexer with VT100/ANSI terminal emulation
+brew "screen"
+# ANSI C compiler for Intel 8051, Maxim 80DS390, and Zilog Z80
+brew "sdcc"
+# Language Server for SQL
+brew "sql-language-server"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Open source flash program for STM32 using the ST serial bootloader
+brew "stm32flash"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Terminal multiplexer
+brew "tmux"
+# Language for application scale JavaScript development
+brew "typescript"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
+# Extraction utility for .zip compressed archives
+brew "unzip"
+# Verilog simulator
+brew "verilator"
+# Internet file retriever
+brew "wget"
+# GNU Binutils for x86_64-elf cross development
+brew "x86_64-elf-binutils"
+# GNU debugger for x86_64-elf cross development
+brew "x86_64-elf-gdb"
+# GNU Binutils for x86_64-linux-gnu cross development
+brew "x86_64-linux-gnu-binutils"
+# Language Server for Yaml Files
+brew "yaml-language-server"
+# Modular BSD reimplementation of NASM
+brew "yasm"
+# Framework for Verilog RTL synthesis
+brew "yosys"
+# EC2 Tools
+brew "scottylogan/brewhouse/ec2-tools"
+# Miscelleaneous Scripts
+brew "scottylogan/brewhouse/misc-scripts"
+# Electronics prototyping platform
+cask "arduino-ide"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
+# Text editor
+cask "emacs"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Interface for reading and syncing eBooks
+cask "kindle"
+# Previewer for Markdown, MultiMarkdown and other text markup languages
+cask "marked"
+# Programmable solid 3D CAD modeller
+cask "openscad"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Open-source code editor
+cask "visual-studio-code"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
+mas "Kindle", id: 302584613
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
