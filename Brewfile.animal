@@ -12,6 +12,8 @@ brew "autoconf-archive"
 brew "automake"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# Nuke a whole AWS account and delete all its resources
+brew "aws-nuke"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Official Amazon AWS command-line interface
@@ -22,6 +24,8 @@ brew "bash"
 brew "bash-completion@2"
 # Arbitrary precision numeric processing language
 brew "bc"
+# Terminal based bit manipulator in ncurses
+brew "bitwise"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Freely available high-quality data compressor
@@ -48,16 +52,22 @@ brew "findutils"
 brew "gawk"
 # Distributed revision control system
 brew "git"
+# GitHub-like contributions calendar but on the command-line
+brew "git-cal"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Open-source GitLab command-line tool
+brew "glab"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Analyzing the dependencies in compiled Golang binaries
+brew "go-size-analyzer"
 # Go version management
 brew "goenv"
 # Command-line Golang template processor
@@ -104,14 +114,20 @@ brew "mas"
 brew "openjdk"
 # Java-based project management
 brew "maven"
+# Collection of tools that nobody wrote when UNIX was young
+brew "moreutils"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Trigger notifications when a process completes
+brew "noti"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Open source suite of directory software
 brew "openldap"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Show ps output as a tree
@@ -126,6 +142,8 @@ brew "shellcheck"
 brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
 # Terraform version manager inspired by rbenv
 brew "tfenv"
 # Static analysis security scanner for your terraform code
@@ -134,6 +152,8 @@ brew "tfsec"
 brew "unzip"
 # Secures, stores, and tightly controls access to secrets
 brew "vault"
+# Vi 'workalike' with many additional features
+brew "vim"
 # Internet file retriever
 brew "wget"
 # Tools for the WireGuard secure network tunnel
@@ -146,6 +166,8 @@ brew "scottylogan/brewhouse/ec2-tools"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Time tracker
+cask "activitywatch"
 # Web debugging Proxy application
 cask "charles"
 # Backup and recovery software
@@ -154,8 +176,6 @@ cask "crashplan"
 cask "dropbox"
 # Text editor
 cask "emacs"
-# Fonts
-cask "font-iosevka-nerd-font"
 cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
@@ -164,19 +184,15 @@ cask "font-sf-mono"
 cask "gpg-suite"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
-# Team communication and collaboration software
-cask "slack"
-# Web browser
-cask "google-chrome"
+# Previewer for Markdown, MultiMarkdown and other text markup languages
+cask "marked"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
-# Video communication and virtual meeting platform
-cask "zoom"
+# Virtual machines UI using QEMU
+cask "utm"
 mas "1Password 7", id: 1333542190
 mas "Keynote", id: 409183694
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
-mas "Microsoft Excel", id: 462058435
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "WireGuard", id: 1451685025
