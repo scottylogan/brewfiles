@@ -128,8 +128,12 @@ brew "openjdk@17"
 brew "openldap"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Tool for creating identical machine images for multiple platforms
+brew "packer"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Parallel versions of OpenSSH and related tools
+brew "pssh"
 # Show ps output as a tree
 brew "pstree"
 # Client/server application for remote execution of tasks
@@ -160,6 +164,8 @@ brew "wget"
 brew "wireguard-tools"
 # Check schema validity and signature of an XML document
 brew "xmlsectool"
+# Linter for YAML files
+brew "yamllint"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
 # Miscelleaneous Scripts
@@ -191,6 +197,7 @@ cask "raspberry-pi-imager"
 # Virtual machines UI using QEMU
 cask "utm"
 mas "1Password 7", id: 1333542190
+mas "Dashlane", id: 517914548
 mas "Keynote", id: 409183694
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
