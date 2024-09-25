@@ -37,6 +37,8 @@ brew "avrdude"
 brew "aws-iam-authenticator"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -55,8 +57,6 @@ brew "binutils"
 brew "bison"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
-# GNU compiler collection
-brew "gcc"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Freely available high-quality data compressor
@@ -87,8 +87,8 @@ brew "fastfetch"
 brew "findutils"
 # GNU awk utility
 brew "gawk"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
+# GNU compiler collection
+brew "gcc"
 # GNU debugger
 brew "gdb"
 # Modern, browser-based frontend to gdb (gnu debugger)
@@ -215,8 +215,8 @@ cask "emacs"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Interface for reading and syncing eBooks
-cask "kindle"
+# Electronics design automation suite
+cask "kicad"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked"
 # Programmable solid 3D CAD modeller
