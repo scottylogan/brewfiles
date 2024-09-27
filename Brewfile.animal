@@ -42,6 +42,8 @@ brew "coreutils"
 brew "curl"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
 # Text processing system for reStructuredText
@@ -120,6 +122,8 @@ brew "maven"
 brew "moreutils"
 # Open source relational database management system
 brew "mysql", restart_service: true
+# Open source relational database management system
+brew "mysql-client@8.4"
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Trigger notifications when a process completes
