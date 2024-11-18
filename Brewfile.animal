@@ -4,6 +4,8 @@ tap "homebrew/services"
 tap "nodenv/nodenv"
 tap "scottylogan/brewhouse"
 tap "weaveworks/tap"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Automatic configure script builder
 brew "autoconf"
 # Collection of over 500 reusable autoconf macros
@@ -14,8 +16,6 @@ brew "automake"
 brew "aws-iam-authenticator"
 # Nuke a whole AWS account and delete all its resources
 brew "aws-nuke"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -34,6 +34,8 @@ brew "btop"
 brew "bzip2"
 # Cross-platform make
 brew "cmake"
+# Generic library support script
+brew "libtool"
 # Manage local application configuration files using templates
 brew "confd"
 # GNU File, Shell, and Text utilities
@@ -52,8 +54,18 @@ brew "docutils"
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Development kit for the Java programming language
+brew "openjdk"
+# Database version control to control migrations
+brew "flyway"
+# High-performance and highly configurable RADIUS server
+brew "freeradius-server"
 # GNU awk utility
 brew "gawk"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Distributed revision control system
 brew "git"
 # GitHub-like contributions calendar but on the command-line
@@ -70,12 +82,20 @@ brew "gnu-tar"
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Opinionated Go source code linter
+brew "go-critic"
 # Analyzing the dependencies in compiled Golang binaries
 brew "go-size-analyzer"
-# Go version management
-brew "goenv"
 # Command-line Golang template processor
 brew "gomplate"
+# Go Language's command-line interface for database migrations
+brew "goose"
+# Golang security checker
+brew "gosec"
+# Database client and tools for the Go vulnerability database
+brew "govulncheck"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
 # GNU grep, egrep and fgrep
 brew "grep"
 # GNU troff text-formatting system
@@ -100,12 +120,10 @@ brew "kubectx"
 brew "lego"
 # Pager program similar to more
 brew "less"
-# Generic library support script
-brew "libtool"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Linux virtual machines
 brew "lima"
+# Library for database change tracking
+brew "liquibase"
 # Utility to list open files
 brew "lsof"
 # Utility for directing compilation
@@ -114,8 +132,6 @@ brew "make"
 brew "markdown"
 # Mac App Store command-line interface
 brew "mas"
-# Development kit for the Java programming language
-brew "openjdk"
 # Java-based project management
 brew "maven"
 # Collection of tools that nobody wrote when UNIX was young
@@ -124,10 +140,14 @@ brew "moreutils"
 brew "mysql", restart_service: true
 # Open source relational database management system
 brew "mysql-client@8.4"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Trigger notifications when a process completes
 brew "noti"
+# Development kit for the Java programming language
+brew "openjdk@11"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Open source suite of directory software
@@ -138,10 +158,14 @@ brew "openssl@1.1"
 brew "packer"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Service monitoring system and time series database
+brew "prometheus"
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
 # Show ps output as a tree
 brew "pstree"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Client/server application for remote execution of tasks
 brew "remctl"
 # Command-line tool for the Amazon S3 service
@@ -150,8 +174,14 @@ brew "s3cmd"
 brew "shellcheck"
 # Easy and Repeatable Kubernetes Development
 brew "skaffold"
+# Generate type safe Go from SQL
+brew "sqlc"
 # Cross-shell prompt for astronauts
 brew "starship"
+# State of the art linter for the Go programming language
+brew "staticcheck"
+# Generate clients, server stubs, and docs from an OpenAPI spec
+brew "swagger-codegen"
 # User interface to the TELNET protocol
 brew "telnet"
 # Send macOS User Notifications from the command-line
@@ -180,8 +210,6 @@ brew "scottylogan/brewhouse/ec2-tools"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Time tracker
-cask "activitywatch"
 # Web debugging Proxy application
 cask "charles"
 # Backup and recovery software
@@ -213,3 +241,4 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
