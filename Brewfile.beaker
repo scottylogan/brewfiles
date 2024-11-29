@@ -104,8 +104,6 @@ brew "confd"
 brew "coreos-ct"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Version control system
-brew "cvs"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Device firmware update based USB programmer for Atmel chips
@@ -174,10 +172,6 @@ brew "git-crypt"
 brew "git-filter-repo"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
-# Version control system designed to be a better CVS
-brew "subversion"
-# Bidirectional operation between a Subversion repository and Git
-brew "git-svn"
 # C++ interface to glib
 brew "glibmm"
 # C++ mathematics library for graphics software
@@ -192,10 +186,6 @@ brew "gnu-tar"
 brew "gnupg", link: false
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Manage compile and link flags for libraries
-brew "pkg-config"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Command-line Golang template processor
 brew "gomplate"
 # Development kit for the Java programming language
@@ -222,8 +212,6 @@ brew "hexyl"
 brew "htop"
 # Verilog simulation and synthesis tool
 brew "icarus-verilog"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -250,8 +238,6 @@ brew "libxml2"
 brew "libxmlsec1"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Linux virtual machines
 brew "lima"
 # Lynx-like WWW browser that supports tables, menus, etc.
@@ -272,8 +258,6 @@ brew "markdown"
 brew "mas"
 # Java-based project management
 brew "maven"
-# Scalable distributed version control system
-brew "mercurial"
 # Tools for manipulating EPROM load files
 brew "srecord"
 # Open controller for the MiniPRO TL866xx series of chip programmers
@@ -294,6 +278,8 @@ brew "ninja"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -304,14 +290,14 @@ brew "nuttcp"
 brew "nvc"
 # Tools for one-time password authentication systems
 brew "oath-toolkit"
-# Development kit for the Java programming language
-brew "openjdk@17"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
 # Bash completion for Packer
 brew "packer-completion"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Utility which converts PDF files into HTML and XML formats
+brew "pdftohtml"
 # Python package management tool
 brew "poetry"
 # Object-relational database system
@@ -322,6 +308,8 @@ brew "python-yq"
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Cross-platform application and UI framework
@@ -330,8 +318,6 @@ brew "qt"
 brew "rapidjson"
 # Persistent key-value database, with built-in net interface
 brew "redis"
-# Client/server application for remote execution of tasks
-brew "remctl"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Safe, concurrent, practical language
@@ -390,8 +376,6 @@ brew "vault"
 brew "verilator"
 # Versatile Commodore Emulator
 brew "vice"
-# Tool for creating isolated virtual python environments
-brew "virtualenv"
 # Internet file retriever
 brew "wget"
 # Library to create, extract, and modify Windows Imaging files
@@ -416,6 +400,8 @@ brew "youtube-dl"
 brew "z80asm"
 # Disassembler for the Zilog Z80 microprocessor and compatibles
 brew "z80dasm"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # CP/M 2/3 emulator for cross-compiling and CP/M tools under UNIX
 brew "zxcc"
 # View man pages for currently active node version
@@ -438,10 +424,8 @@ brew "scottylogan/brewhouse/misc-scripts"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# JDK from the Java User Group (JUG)
-cask "adoptopenjdk"
-# Communications service
-cask "amazon-chime"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 # Electronics prototyping platform
 cask "arduino"
 # Electronics prototyping platform
@@ -535,6 +519,8 @@ cask "postman"
 cask "prolific-pl2303"
 # Access and edit GoPro photos and videos
 cask "quik"
+cask "rember"
+# 3D modeling software used to create and manipulate 3D models
 cask "sketchup"
 # Team communication and collaboration software
 cask "slack"
