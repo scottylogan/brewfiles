@@ -5,7 +5,6 @@ tap "go-swagger/go-swagger"
 tap "gromgit/fuse"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-versions"
 tap "homebrew/command-not-found"
 tap "homebrew/services"
 tap "lifepillar/appleii"
@@ -161,8 +160,6 @@ brew "nuttcp"
 brew "openfpgaloader"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Python version management
 brew "pyenv"
 # Terminal multiplexer with VT100/ANSI terminal emulation
@@ -227,6 +224,9 @@ cask "raspberry-pi-imager"
 cask "visual-studio-code"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
