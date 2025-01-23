@@ -139,7 +139,7 @@ brew "maven"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql", restart_service: :changed
 # Open source relational database management system
 brew "mysql-client@8.4"
 # Package compiler and linker metadata toolkit
@@ -186,10 +186,10 @@ brew "staticcheck"
 brew "swagger-codegen"
 # User interface to the TELNET protocol
 brew "telnet"
+# OpenTofu / Terraform / Terragrunt / Atmos version manager
+brew "tenv"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Terraform version manager inspired by rbenv
-brew "tfenv"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Extraction utility for .zip compressed archives
@@ -243,6 +243,7 @@ cask "raycast"
 # Virtual machines UI using QEMU
 cask "utm"
 mas "1Password 7", id: 1333542190
+mas "Apple Configurator", id: 1037126344
 mas "Dashlane", id: 517914548
 mas "Keynote", id: 409183694
 mas "Microsoft PowerPoint", id: 462062816
