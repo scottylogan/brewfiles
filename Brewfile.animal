@@ -90,6 +90,8 @@ brew "go-size-analyzer"
 brew "gomplate"
 # Go Language's command-line interface for database migrations
 brew "goose"
+# Language server for the Go language
+brew "gopls"
 # Golang security checker
 brew "gosec"
 # Database client and tools for the Go vulnerability database
@@ -128,6 +130,8 @@ brew "lima"
 brew "liquibase"
 # Utility to list open files
 brew "lsof"
+# Apple Silicon Monitor Top written in Golang
+brew "mactop"
 # Utility for directing compilation
 brew "make"
 # Text-to-HTML conversion tool
@@ -148,6 +152,8 @@ brew "pkgconf"
 brew "nodenv"
 # Trigger notifications when a process completes
 brew "noti"
+# Create, run, and share large language models (LLMs)
+brew "ollama", restart_service: :changed
 # Development kit for the Java programming language
 brew "openjdk@11"
 # Development kit for the Java programming language
@@ -222,6 +228,7 @@ cask "crashplan"
 cask "dropbox"
 # Text editor
 cask "emacs"
+cask "font-anonymous-pro"
 cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
@@ -232,6 +239,8 @@ cask "google-cloud-sdk"
 cask "gpg-suite"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked"
 # Visual communication software
