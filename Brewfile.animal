@@ -28,6 +28,8 @@ brew "bash-completion@2"
 brew "bat"
 # Arbitrary precision numeric processing language
 brew "bc"
+# Implementation of the DNS protocols
+brew "bind"
 # Terminal based bit manipulator in ncurses
 brew "bitwise"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -110,6 +112,8 @@ brew "groff"
 brew "gzip"
 # Kubernetes package manager
 brew "helm"
+# Command-line hex viewer
+brew "hexyl"
 # Improved top (interactive process viewer)
 brew "htop"
 # Add GitHub support to git on the command-line
@@ -170,6 +174,10 @@ brew "openssl@1.1"
 brew "packer"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Object-relational database system
+brew "postgresql@17"
 # Service monitoring system and time series database
 brew "prometheus"
 # Parallel versions of OpenSSH and related tools
@@ -198,10 +206,10 @@ brew "staticcheck"
 brew "swagger-codegen"
 # User interface to the TELNET protocol
 brew "telnet"
-# OpenTofu / Terraform / Terragrunt / Atmos version manager
-brew "tenv"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Extraction utility for .zip compressed archives
