@@ -124,6 +124,8 @@ brew "hyperfine"
 brew "jq"
 # Network authentication protocol
 brew "krb5"
+# Static analysis tool for Kubernetes YAML files and Helm charts
+brew "kube-linter"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -269,12 +271,3 @@ cask "raycast"
 cask "utm"
 # REST, GraphQL and gRPC client
 cask "yaak"
-mas "1Password 7", id: 1333542190
-mas "Apple Configurator", id: 1037126344
-mas "Dashlane", id: 517914548
-mas "Keynote", id: 409183694
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
