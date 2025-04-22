@@ -1,5 +1,6 @@
 tap "aws/tap"
-tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/services"
 tap "nodenv/nodenv"
 tap "scottylogan/brewhouse"
 tap "weaveworks/tap"
@@ -37,6 +38,8 @@ brew "btop"
 brew "bzip2"
 # Cross-platform make
 brew "cmake"
+# Generic library support script
+brew "libtool"
 # Manage local application configuration files using templates
 brew "confd"
 # GNU File, Shell, and Text utilities
@@ -55,20 +58,30 @@ brew "docutils"
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Development kit for the Java programming language
+brew "openjdk"
+# Database version control to control migrations
+brew "flyway"
+# High-performance and highly configurable RADIUS server
+brew "freeradius-server"
 # GNU awk utility
 brew "gawk"
 # GitHub command-line tool
 brew "gh"
-# OpenType text shaping engine
-brew "harfbuzz"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Distributed revision control system
 brew "git"
+# GitHub-like contributions calendar but on the command-line
+brew "git-cal"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Open-source GitLab command-line tool
+brew "glab"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -89,8 +102,6 @@ brew "gopls"
 brew "gosec"
 # Database client and tools for the Go vulnerability database
 brew "govulncheck"
-# Generic library support script
-brew "libtool"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
@@ -111,6 +122,8 @@ brew "hub"
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
 # Static analysis tool for Kubernetes YAML files and Helm charts
 brew "kube-linter"
 # Kubernetes command-line interface
@@ -123,6 +136,8 @@ brew "lego"
 brew "less"
 # Linux virtual machines
 brew "lima"
+# Library for database change tracking
+brew "liquibase"
 # Utility to list open files
 brew "lsof"
 # Apple Silicon Monitor Top written in Golang
@@ -133,8 +148,14 @@ brew "make"
 brew "markdown"
 # Mac App Store command-line interface
 brew "mas"
+# Java-based project management
+brew "maven"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
+# Open source relational database management system
+brew "mysql", restart_service: :changed
+# Open source relational database management system
+brew "mysql-client@8.4"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Manage multiple NodeJS versions
@@ -144,11 +165,21 @@ brew "noti"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
 # Development kit for the Java programming language
-brew "openjdk"
+brew "openjdk@11"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Open source suite of directory software
+brew "openldap"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Tool for creating identical machine images for multiple platforms
+brew "packer"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Object-relational database system
+brew "postgresql@17"
 # Service monitoring system and time series database
 brew "prometheus"
 # Parallel versions of OpenSSH and related tools
@@ -157,6 +188,8 @@ brew "pssh"
 brew "pstree"
 # Generic machine emulator and virtualizer
 brew "qemu"
+# Command-line client for the Registration Data Access Protocol
+brew "rdap"
 # Client/server application for remote execution of tasks
 brew "remctl"
 # Command-line tool for the Amazon S3 service
@@ -183,6 +216,8 @@ brew "tfenv"
 brew "tfsec"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Secures, stores, and tightly controls access to secrets
+brew "vault"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Internet file retriever
@@ -193,8 +228,6 @@ brew "wireguard-tools"
 brew "xmlsectool"
 # Linter for YAML files
 brew "yamllint"
-# Vault
-brew "hashicorp/tap/vault"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
 # Miscelleaneous Scripts
@@ -205,6 +238,8 @@ brew "weaveworks/tap/eksctl"
 cask "alacritty"
 # Web debugging Proxy application
 cask "charles"
+# Backup and recovery software
+cask "crashplan"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Text editor
@@ -236,8 +271,3 @@ cask "raycast"
 cask "utm"
 # REST, GraphQL and gRPC client
 cask "yaak"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
