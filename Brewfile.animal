@@ -1,24 +1,62 @@
+tap "adoptopenjdk/openjdk"
 tap "aws/tap"
+tap "freecad/freecad"
+tap "go-swagger/go-swagger"
+tap "gromgit/fuse"
 tap "hashicorp/tap"
+tap "lifepillar/appleii"
+tap "linuxkit/linuxkit"
 tap "nodenv/nodenv"
+tap "osx-cross/arm"
+tap "osx-cross/openocd"
+tap "riscv-software-src/riscv"
+tap "rosco-m68k/toolchain"
 tap "scottylogan/brewhouse"
 tap "weaveworks/tap"
+# Crossassembler for multiple environments
+brew "acme"
+# Algol 68 compiler-interpreter
+brew "algol68g"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# Generates static HTML overview page from Ansible facts
+brew "ansible-cmdb"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
+# Library for manipulating PNG images
+brew "libpng"
+# Arduino command-line interface
+brew "arduino-cli"
+# Cross assembler targeting the Motorola 6809 and Hitachi 6309
+brew "asm6809"
+# Go Assembler Formatter
+brew "asmfmt"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl2"
+# Atari 8-bit machine emulator
+brew "atari800"
+# Atari MAC/65 compatible assembler for Unix
+brew "atasm"
 # Automatic configure script builder
 brew "autoconf"
 # Collection of over 500 reusable autoconf macros
 brew "autoconf-archive"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Assembler for the Atmel AVR microcontroller family
+brew "avra"
+# Atmel AVR MCU programmer
+brew "avrdude"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Nuke a whole AWS account and delete all its resources
 brew "aws-nuke"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Minimal BASIC programming language interpreter as defined by ECMA-55
+brew "bas55"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 4.2+
@@ -31,18 +69,46 @@ brew "bc"
 brew "bind"
 # Terminal based bit manipulator in ncurses
 brew "bitwise"
+# Generic library support script
+brew "libtool"
+# Open source IA-32 (x86) PC emulator written in C++
+brew "bochs"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+brew "buildkit"
 # Freely available high-quality data compressor
 brew "bzip2"
+# Scriptable network and serial communication for UNIX and VMS
+brew "c-kermit"
+# Software library to render fonts
+brew "freetype"
+# 6502 C compiler
+brew "cc65"
+# Generate call graphs from C code
+brew "cflow"
+# C unit testing framework
+brew "check"
+# CLI to perform various actions on CIDR ranges
+brew "cidr"
+# GNU CLISP, a Common Lisp implementation
+brew "clisp"
 # Cross-platform make
 brew "cmake"
 # Manage local application configuration files using templates
 brew "confd"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Tools to access CP/M file systems
+brew "cpmtools"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Macro assembler with support for several 8-bit microprocessors
+brew "dasm"
+# Device firmware update based USB programmer for Atmel chips
+brew "dfu-programmer"
+# USB programmer
+brew "dfu-util"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
@@ -51,24 +117,48 @@ brew "docker-buildx"
 brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# DOSBox with accurate emulation and wide testing
+brew "dosbox-x"
+# Extra modules and scripts for CMake
+brew "extra-cmake-modules"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# Z-Machine interpreter
+brew "fizmo"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# R7RS Scheme implementation, developed to be a handy script interpreter
+brew "gauche"
 # GNU awk utility
 brew "gawk"
+# Implementation of the ANS Forth language
+brew "gforth"
 # GitHub command-line tool
 brew "gh"
+# Installer for the general purpose language Haskell
+brew "ghcup"
 # OpenType text shaping engine
 brew "harfbuzz"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Command-line option parsing utility
+brew "gnu-getopt"
+# C code prettifier
+brew "gnu-indent"
+# Prolog compiler with constraint solving
+brew "gnu-prolog"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -81,24 +171,30 @@ brew "go-critic"
 brew "go-size-analyzer"
 # Command-line Golang template processor
 brew "gomplate"
-# Go Language's command-line interface for database migrations
-brew "goose"
 # Language server for the Go language
 brew "gopls"
 # Golang security checker
 brew "gosec"
 # Database client and tools for the Go vulnerability database
 brew "govulncheck"
-# Generic library support script
-brew "libtool"
+# Gorgeous metric visualizations and dashboards for timeseries databases
+brew "grafana", restart_service: :changed
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
 brew "grep"
 # GNU troff text-formatting system
 brew "groff"
+# Next generation open source RPC library and framework
+brew "grpc"
+# Interactive web UI for gRPC, along the lines of postman
+brew "grpcui"
+# Like cURL, but for gRPC
+brew "grpcurl"
 # Popular GNU data compression program
 brew "gzip"
+# Atari ST/STE/TT/Falcon emulator
+brew "hatari"
 # Kubernetes package manager
 brew "helm"
 # Command-line hex viewer
@@ -109,62 +205,132 @@ brew "htop"
 brew "hub"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Verilog simulation and synthesis tool
+brew "icarus-verilog"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Run local Kubernetes cluster in Docker
+brew "kind"
 # Static analysis tool for Kubernetes YAML files and Helm charts
 brew "kube-linter"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
+# Update LDAP entries with a text editor
+brew "ldapvi"
 # Let's Encrypt client and ACME library
 brew "lego"
 # Pager program similar to more
 brew "less"
+# BSD-style licensed readline alternative
+brew "libedit"
+# Write licenses to stdout
+brew "licensor"
 # Linux virtual machines
 brew "lima"
 # Utility to list open files
 brew "lsof"
+# List USB devices, just like the Linux lsusb command
+brew "lsusb"
+# Cross-development tools for Motorola 6809 and Hitachi 6309
+brew "lwtools"
+# Open source tools for managing network attached LXI compatible instruments
+brew "lxi-tools"
 # Apple Silicon Monitor Top written in Golang
 brew "mactop"
 # Utility for directing compilation
 brew "make"
+# Drop-in replacement for MySQL
+brew "mariadb"
 # Text-to-HTML conversion tool
 brew "markdown"
 # Mac App Store command-line interface
 brew "mas"
+# Create modern online books from Markdown files
+brew "mdbook"
+# Modern programming language in the Lisp/Scheme family
+brew "minimal-racket"
+# Open controller for the MiniPRO TL866xx series of chip programmers
+brew "minipro"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
+# Tools for manipulating MSDOS files
+brew "mtools"
+# Netwide Assembler (NASM) is an 80x86 assembler
+brew "nasm"
+# Lisp-like, general-purpose scripting language
+brew "newlisp"
+# Spice circuit simulator
+brew "ngspice"
+# Small build system for use with gyp or CMake
+brew "ninja"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Trigger notifications when a process completes
 brew "noti"
+# Network performance measurement tool
+brew "nuttcp"
+# VHDL compiler and simulator
+brew "nvc"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
+# On-chip debugging, in-system programming and boundary-scan testing
+brew "open-ocd"
 # Development kit for the Java programming language
 brew "openjdk"
+# Open source suite of directory software
+brew "openldap"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Perl compatible regular expressions library
+brew "pcre"
+# Utility which converts PDF files into HTML and XML formats
+brew "pdftohtml"
+# Tool for interacting with RP2040/RP2350 devices and binaries
+brew "picotool"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Service monitoring system and time series database
-brew "prometheus"
+brew "prometheus", restart_service: :changed
+# Protoc plugin that generates code for gRPC-Go clients
+brew "protoc-gen-go-grpc"
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
 # Show ps output as a tree
 brew "pstree"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Client/server application for remote execution of tasks
 brew "remctl"
+# Rust toolchain installer
+brew "rustup"
 # Command-line tool for the Amazon S3 service
 brew "s3cmd"
+# Steel Bank Common Lisp system
+brew "sbcl"
+# Scheme byte-code interpreter
+brew "scheme48"
+# ANSI C compiler for Intel 8051, Maxim 80DS390, and Zilog Z80
+brew "sdcc"
+# Library for using TrueType fonts in SDL applications
+brew "sdl2_ttf"
+# Command-line toolkit for Salesforce development
+brew "sf"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Extensive Java based Scheme interpreter
+brew "sisc-scheme"
 # Easy and Repeatable Kubernetes Development
 brew "skaffold"
+# SOcket CAT: netcat on steroids
+brew "socat"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Cross-shell prompt for astronauts
@@ -173,69 +339,220 @@ brew "starship"
 brew "staticcheck"
 # Generate clients, server stubs, and docs from an OpenAPI spec
 brew "swagger-codegen"
+# ISO/Edinburgh-style Prolog interpreter
+brew "swi-prolog"
+# Multi pass optimizing macro assembler for the 65xx series of processors
+brew "tass64"
+# Command-line integration for Teensy USB development boards
+brew "teensy_loader_cli"
 # User interface to the TELNET protocol
 brew "telnet"
+# OpenTofu / Terraform / Terragrunt / Atmos version manager
+brew "tenv"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Terraform version manager inspired by rbenv
-brew "tfenv"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
+# Simple TTY terminal I/O application
+brew "tio"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Verilog simulator
+brew "verilator"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
 # Internet file retriever
 brew "wget"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Wyse 60 compatible terminal emulator
+brew "wy60"
+# 6502 cross assembler
+brew "xa"
 # Check schema validity and signature of an XML document
 brew "xmlsectool"
+# Dragon and Tandy 8-bit computer emulator
+brew "xroar"
 # Linter for YAML files
 brew "yamllint"
+# Framework for Verilog RTL synthesis
+brew "yosys"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Assembler for the Zilog Z80 microprcessor and compatibles
+brew "z80asm"
+# Disassembler for the Zilog Z80 microprocessor and compatibles
+brew "z80dasm"
+# Download and manage zig compilers
+brew "zigup"
+# General-purpose lossless data-compression library
+brew "zlib"
+# CP/M 2/3 emulator for cross-compiling and CP/M tools under UNIX
+brew "zxcc"
 # Vault
 brew "hashicorp/tap/vault"
+# vasm portable and retargetable assembler.
+brew "rosco-m68k/toolchain/vasm-all"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
 # Miscelleaneous Scripts
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Classic After Dark screensaver set
+cask "after-dark-classic"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Tool for linking with Bambu Lab 3D printers
+cask "bambu-connect"
+# 3D model slicing software for 3D printers, maintained by Bambu Lab
+cask "bambu-studio"
+# Design your own LEGO parts
+cask "bricklink-partdesigner"
+# Build, render, and create LEGO instructions
+cask "bricklink-studio"
+# Virtual Lego modelling
+cask "bricksmith"
+# BrickLink offline management tool
+cask "brickstore"
 # Web debugging Proxy application
 cask "charles"
+# Terminal emulator mimicking the old cathode display
+cask "cool-retro-term"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
+# Password manager that syncs across devices
+cask "dropbox-passwords"
+# Build desktop apps with JavaScript, HTML, and CSS
+cask "electron"
 # Text editor
 cask "emacs"
 cask "font-anonymous-pro"
+cask "font-benchnine"
+cask "font-courier-new"
+cask "font-courier-prime"
+cask "font-courier-prime-code"
+cask "font-courier-prime-medium-and-semi-bold"
+cask "font-courier-prime-sans"
+cask "font-crimson-pro"
+cask "font-crimson-text"
+cask "font-dejavu"
+cask "font-dejavu-sans-mono-for-powerline"
+cask "font-dejavu-sans-mono-nerd-font"
+cask "font-droid-sans-mono-for-powerline"
+cask "font-droid-sans-mono-nerd-font"
+cask "font-envy-code-r"
+cask "font-envy-code-r-nerd-font"
+cask "font-exo-2"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono"
+cask "font-fira-mono-nerd-font"
+cask "font-fira-sans"
+cask "font-fira-sans-condensed"
+cask "font-fira-sans-extra-condensed"
+cask "font-fontdiner-swanky"
+cask "font-hammersmith-one"
+cask "font-ibm-plex-mono"
+cask "font-inconsolata"
+cask "font-inconsolata-for-powerline"
+cask "font-inconsolata-for-powerline-bold"
+cask "font-input"
+cask "font-iosevka"
+cask "font-iosevka-nerd-font"
 cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
+cask "font-liberation"
+cask "font-liberation-mono-for-powerline"
+cask "font-liberation-nerd-font"
+cask "font-luxurious-roman"
+cask "font-luxurious-script"
+cask "font-m-plus-1"
+cask "font-m-plus-1-code"
+cask "font-m-plus-1p"
+cask "font-maiden-orange"
+cask "font-montserrat"
+cask "font-nanum-gothic-coding"
+cask "font-ocr"
+cask "font-peralta"
+cask "font-righteous"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-mono-for-powerline"
+cask "font-roboto-mono-nerd-font"
 cask "font-sf-mono"
+cask "font-sf-mono-for-powerline"
+cask "font-sf-mono-nerd-font-ligaturized"
+cask "font-sf-pro"
+cask "font-sonsie-one"
+cask "font-source-code-pro"
+cask "font-source-code-pro-for-powerline"
+cask "font-source-sans-3"
+cask "font-source-serif-4"
+cask "font-ubuntu"
+cask "font-ubuntu-condensed"
+cask "font-ubuntu-mono"
+cask "font-ubuntu-mono-derivative-powerline"
+cask "font-ubuntu-mono-nerd-font"
+cask "font-ubuntu-nerd-font"
+cask "font-ubuntu-sans"
+cask "font-ubuntu-sans-mono"
+cask "font-ubuntu-sans-nerd-font"
+cask "font-vt323"
+# 3D parametric modeller
+cask "freecad"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
+cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
 # Tools to protect your emails and files
 cask "gpg-suite"
+# Vector graphics editor
+cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
+# Desktop application for JupyterLab
+cask "jupyterlab"
+# Electronics design automation suite
+cask "kicad"
+# CAD program for creating virtual LEGO models
+cask "leocad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked"
+cask "nscope"
 # Visual communication software
 cask "omnigraffle"
+# Programmable solid 3D CAD modeller
+cask "openscad@snapshot"
+# PL2303 USB-to-serial driver
+cask "prolific-pl2303"
+# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+cask "prusaslicer"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Control your tools with a few keystrokes
 cask "raycast"
+# 3D modeling software used to create and manipulate 3D models
+cask "sketchup"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin"
 # Virtual machines UI using QEMU
 cask "utm"
+# Open-source code editor
+cask "visual-studio-code"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 # REST, GraphQL and gRPC client
 cask "yaak"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
