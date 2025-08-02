@@ -15,18 +15,28 @@ tap "scottylogan/brewhouse"
 tap "weaveworks/tap"
 # Crossassembler for multiple environments
 brew "acme"
-# Algol 68 compiler-interpreter
-brew "algol68g"
+# Library for manipulating PNG images
+brew "libpng"
+# Software library to render fonts
+brew "freetype"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# AI pair programming in your terminal
+brew "aider"
+# Algol 68 compiler-interpreter
+brew "algol68g"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Generates static HTML overview page from Ansible facts
 brew "ansible-cmdb"
+# Language Server for Ansible Files
+brew "ansible-language-server"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
-# Library for manipulating PNG images
-brew "libpng"
 # Arduino command-line interface
 brew "arduino-cli"
 # Cross assembler targeting the Motorola 6809 and Hitachi 6309
@@ -61,6 +71,8 @@ brew "bas55"
 brew "bash"
 # Programmable completion for Bash 4.2+
 brew "bash-completion@2"
+# Language Server for Bash
+brew "bash-language-server"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Arbitrary precision numeric processing language
@@ -81,8 +93,6 @@ brew "buildkit"
 brew "bzip2"
 # Scriptable network and serial communication for UNIX and VMS
 brew "c-kermit"
-# Software library to render fonts
-brew "freetype"
 # 6502 C compiler
 brew "cc65"
 # Generate call graphs from C code
@@ -95,12 +105,16 @@ brew "cidr"
 brew "clisp"
 # Cross-platform make
 brew "cmake"
+# Language Server for CMake
+brew "cmake-language-server"
 # Manage local application configuration files using templates
 brew "confd"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Tools to access CP/M file systems
 brew "cpmtools"
+# Top-like interface for container metrics
+brew "ctop"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Macro assembler with support for several 8-bit microprocessors
@@ -115,6 +129,8 @@ brew "docker"
 brew "docker-buildx"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
+# Language server for Dockerfiles powered by Node, TypeScript, and VSCode
+brew "dockerfile-language-server"
 # Text processing system for reStructuredText
 brew "docutils"
 # Convert text between DOS, UNIX, and Mac formats
@@ -141,8 +157,6 @@ brew "gforth"
 brew "gh"
 # Installer for the general purpose language Haskell
 brew "ghcup"
-# OpenType text shaping engine
-brew "harfbuzz"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Interpreter for PostScript and PDF
@@ -175,6 +189,8 @@ brew "gomplate"
 brew "gopls"
 # Golang security checker
 brew "gosec"
+# Automatically generate Go test boilerplate from your source code
+brew "gotests"
 # Database client and tools for the Go vulnerability database
 brew "govulncheck"
 # Gorgeous metric visualizations and dashboards for timeseries databases
@@ -242,15 +258,13 @@ brew "mactop"
 # Utility for directing compilation
 brew "make"
 # Drop-in replacement for MySQL
-brew "mariadb"
+brew "mariadb", restart_service: :changed
 # Text-to-HTML conversion tool
 brew "markdown"
 # Mac App Store command-line interface
 brew "mas"
 # Create modern online books from Markdown files
 brew "mdbook"
-# Modern programming language in the Lisp/Scheme family
-brew "minimal-racket"
 # Open controller for the MiniPRO TL866xx series of chip programmers
 brew "minipro"
 # Collection of tools that nobody wrote when UNIX was young
@@ -267,7 +281,7 @@ brew "ngspice"
 brew "ninja"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# Manage multiple NodeJS versions
+# Node.js version manager
 brew "nodenv"
 # Trigger notifications when a process completes
 brew "noti"
@@ -295,6 +309,10 @@ brew "picotool"
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Object-relational database system
+brew "postgresql@17", restart_service: :changed
+# Serves a fully RESTful API from any existing PostgreSQL database
+brew "postgrest"
 # Service monitoring system and time series database
 brew "prometheus", restart_service: :changed
 # Protoc plugin that generates code for gRPC-Go clients
@@ -303,8 +321,8 @@ brew "protoc-gen-go-grpc"
 brew "pssh"
 # Show ps output as a tree
 brew "pstree"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
+# Python Language Server for the Language Server Protocol
+brew "python-lsp-server"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Client/server application for remote execution of tasks
@@ -331,6 +349,10 @@ brew "sisc-scheme"
 brew "skaffold"
 # SOcket CAT: netcat on steroids
 brew "socat"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Language Server for SQL
+brew "sql-language-server"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Cross-shell prompt for astronauts
@@ -347,14 +369,16 @@ brew "tass64"
 brew "teensy_loader_cli"
 # User interface to the TELNET protocol
 brew "telnet"
-# OpenTofu / Terraform / Terragrunt / Atmos version manager
+# OpenTofu / Terraform / Terragrunt / Terramate / Atmos version manager
 brew "tenv"
-# Send macOS User Notifications from the command-line
-brew "terminal-notifier"
+# Terraform Language Server
+brew "terraform-ls"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Simple TTY terminal I/O application
 brew "tio"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Verilog simulator
@@ -375,6 +399,8 @@ brew "xa"
 brew "xmlsectool"
 # Dragon and Tandy 8-bit computer emulator
 brew "xroar"
+# Language Server for Yaml Files
+brew "yaml-language-server"
 # Linter for YAML files
 brew "yamllint"
 # Framework for Verilog RTL synthesis
@@ -421,6 +447,8 @@ cask "brickstore"
 cask "charles"
 # Terminal emulator mimicking the old cathode display
 cask "cool-retro-term"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Password manager that syncs across devices
@@ -428,9 +456,14 @@ cask "dropbox-passwords"
 # Build desktop apps with JavaScript, HTML, and CSS
 cask "electron"
 # Text editor
-cask "emacs"
+cask "emacs-app"
 cask "font-anonymous-pro"
+cask "font-atkinson-hyperlegible"
+cask "font-atkinson-hyperlegible-mono"
+cask "font-atkinson-hyperlegible-next"
 cask "font-benchnine"
+cask "font-cantarell"
+cask "font-computer-modern"
 cask "font-courier-new"
 cask "font-courier-prime"
 cask "font-courier-prime-code"
@@ -446,6 +479,7 @@ cask "font-droid-sans-mono-nerd-font"
 cask "font-envy-code-r"
 cask "font-envy-code-r-nerd-font"
 cask "font-exo-2"
+cask "font-fantasque-sans-mono-nerd-font"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono"
@@ -465,6 +499,7 @@ cask "font-iosevka-nerd-font"
 cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
 cask "font-liberation"
 cask "font-liberation-mono-for-powerline"
 cask "font-liberation-nerd-font"
@@ -474,15 +509,19 @@ cask "font-m-plus-1"
 cask "font-m-plus-1-code"
 cask "font-m-plus-1p"
 cask "font-maiden-orange"
+cask "font-monofur-nerd-font"
 cask "font-montserrat"
 cask "font-nanum-gothic-coding"
+cask "font-new-computer-modern"
 cask "font-ocr"
 cask "font-peralta"
+cask "font-recursive-mono-nerd-font"
 cask "font-righteous"
 cask "font-roboto"
 cask "font-roboto-mono"
 cask "font-roboto-mono-for-powerline"
 cask "font-roboto-mono-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 cask "font-sf-mono"
 cask "font-sf-mono-for-powerline"
 cask "font-sf-mono-nerd-font-ligaturized"
@@ -492,6 +531,8 @@ cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-3"
 cask "font-source-serif-4"
+cask "font-space-mono-nerd-font"
+cask "font-symbols-only-nerd-font"
 cask "font-ubuntu"
 cask "font-ubuntu-condensed"
 cask "font-ubuntu-mono"
@@ -501,15 +542,18 @@ cask "font-ubuntu-nerd-font"
 cask "font-ubuntu-sans"
 cask "font-ubuntu-sans-mono"
 cask "font-ubuntu-sans-nerd-font"
+cask "font-victor-mono-nerd-font"
 cask "font-vt323"
 # 3D parametric modeller
 cask "freecad"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Go (golang) IDE
+cask "goland"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Vector graphics editor
@@ -517,7 +561,7 @@ cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
 # Desktop application for JupyterLab
-cask "jupyterlab"
+cask "jupyterlab-app"
 # Electronics design automation suite
 cask "kicad"
 # CAD program for creating virtual LEGO models
@@ -525,7 +569,7 @@ cask "leocad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
-cask "marked"
+cask "marked-app"
 cask "nscope"
 # Visual communication software
 cask "omnigraffle"
@@ -535,6 +579,8 @@ cask "openscad@snapshot"
 cask "prolific-pl2303"
 # G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
 cask "prusaslicer"
+# Modern programming language in the Lisp/Scheme family
+cask "racket"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Control your tools with a few keystrokes
@@ -545,6 +591,8 @@ cask "sketchup"
 cask "temurin"
 # Virtual machines UI using QEMU
 cask "utm"
+# Development environment
+cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
 # Open-source version of the X.Org X Window System
@@ -556,5 +604,6 @@ cask "zoom"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
