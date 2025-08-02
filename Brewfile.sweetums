@@ -1,0 +1,286 @@
+tap "aws/tap"
+tap "hashicorp/tap"
+tap "nodenv/nodenv"
+tap "scottylogan/brewhouse"
+tap "weaveworks/tap"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# CLI tool for building Ansible Execution Environments (Containers)
+brew "ansible-builder"
+# Language Server for Ansible Files
+brew "ansible-language-server"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
+# Perf monitoring CLI tool for Apple Silicon
+brew "asitop"
+# Automatic configure script builder
+brew "autoconf"
+# Collection of over 500 reusable autoconf macros
+brew "autoconf-archive"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Use AWS IAM credentials to authenticate to Kubernetes
+brew "aws-iam-authenticator"
+# Nuke a whole AWS account and delete all its resources
+brew "aws-nuke"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Arbitrary precision numeric processing language
+brew "bc"
+# Implementation of the DNS protocols
+brew "bind"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+brew "buildkit"
+# Freely available high-quality data compressor
+brew "bzip2"
+# CD/DVD/Blu-ray premastering and recording software
+brew "cdrtools"
+# Cross-platform make
+brew "cmake"
+# Manage local application configuration files using templates
+brew "confd"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
+# Text processing system for reStructuredText
+brew "docutils"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# GNU awk utility
+brew "gawk"
+# Interact with Google Gemini AI models from the command-line
+brew "gemini-cli"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# GitHub-like contributions calendar but on the command-line
+brew "git-cal"
+# Enable transparent encryption/decryption of files in a git repo
+brew "git-crypt"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# Open-source GitLab command-line tool
+brew "glab"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Opinionated Go source code linter
+brew "go-critic"
+# Analyzing the dependencies in compiled Golang binaries
+brew "go-size-analyzer"
+# Fast linters runner for Go
+brew "golangci-lint"
+# Command-line Golang template processor
+brew "gomplate"
+# Language server for the Go language
+brew "gopls"
+# Golang security checker
+brew "gosec"
+# Database client and tools for the Go vulnerability database
+brew "govulncheck"
+# GNU grep, egrep and fgrep
+brew "grep"
+# GNU troff text-formatting system
+brew "groff"
+# Popular GNU data compression program
+brew "gzip"
+# Kubernetes package manager
+brew "helm"
+# HTTP load generator, ApacheBench (ab) replacement
+brew "hey"
+# Improved top (interactive process viewer)
+brew "htop"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Static analysis tool for Kubernetes YAML files and Helm charts
+brew "kube-linter"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Let's Encrypt client and ACME library
+brew "lego"
+# Pager program similar to more
+brew "less"
+# Generic library support script
+brew "libtool"
+# Write licenses to stdout
+brew "licensor"
+# Linux virtual machines
+brew "lima"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Additional guest agents for Lima
+brew "lima-additional-guestagents"
+# Utility to list open files
+brew "lsof"
+# Apple Silicon Monitor Top written in Golang
+brew "mactop"
+# Utility for directing compilation
+brew "make"
+# Text-to-HTML conversion tool
+brew "markdown"
+# Mac App Store command-line interface
+brew "mas"
+# CLI for Mermaid library
+brew "mermaid-cli"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Collection of tools that nobody wrote when UNIX was young
+brew "moreutils"
+# Node.js version manager
+brew "nodenv"
+# Package manager for Microsoft development platform including .NET
+brew "nuget"
+# Create, run, and share large language models (LLMs)
+brew "ollama", restart_service: :changed
+# Open source suite of directory software
+brew "openldap"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Object-relational database system
+brew "postgresql@15", restart_service: :changed
+# Serves a fully RESTful API from any existing PostgreSQL database
+brew "postgrest"
+# Service monitoring system and time series database
+brew "prometheus"
+# Parallel versions of OpenSSH and related tools
+brew "pssh"
+# Show ps output as a tree
+brew "pstree"
+# Command-line client for the Registration Data Access Protocol
+brew "rdap"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
+# Generate type safe Go from SQL
+brew "sqlc"
+# Cross-shell prompt for astronauts
+brew "starship"
+# State of the art linter for the Go programming language
+brew "staticcheck"
+# Generate clients, server stubs, and docs from an OpenAPI spec
+brew "swagger-codegen"
+# User interface to the TELNET protocol
+brew "telnet"
+# OpenTofu / Terraform / Terragrunt / Terramate / Atmos version manager
+brew "tenv"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
+# Extraction utility for .zip compressed archives
+brew "unzip"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Internet file retriever
+brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
+# Check schema validity and signature of an XML document
+brew "xmlsectool"
+# Linter for YAML files
+brew "yamllint"
+# Packer
+brew "hashicorp/tap/packer"
+# EC2 Tools
+brew "scottylogan/brewhouse/ec2-tools"
+# Miscelleaneous Scripts
+brew "scottylogan/brewhouse/misc-scripts"
+# The official CLI for Amazon EKS
+brew "weaveworks/tap/eksctl"
+# Web debugging Proxy application
+cask "charles"
+# UI for creating Windows installer ISO from UUPDump
+cask "crystalfetch"
+# Developer platform
+cask "dotnet-sdk"
+# Text editor
+cask "emacs-app"
+cask "font-anonymous-pro"
+cask "font-atkinson-hyperlegible"
+cask "font-atkinson-hyperlegible-mono"
+cask "font-atkinson-hyperlegible-next"
+cask "font-cantarell"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono"
+cask "font-fira-mono-nerd-font"
+cask "font-iosevka-slab"
+cask "font-iosevka-term-nerd-font"
+cask "font-iosevka-term-slab-nerd-font"
+cask "font-sf-mono"
+# Web browser
+cask "google-chrome"
+# Tools to protect your emails and files
+cask "gpg-suite"
+# IDE for Java development - community edition
+cask "intellij-idea-ce"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2@beta"
+# Discover, download, and run local LLMs
+cask "lm-studio"
+# Previewer for Markdown, MultiMarkdown and other text markup languages
+cask "marked-app"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
+# Database administration and development tool for SQL-server
+cask "navicat-for-sql-server"
+# Command-line shell and scripting language
+cask "powershell"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Virtual machines UI using QEMU
+cask "utm"
+# Development environment
+cask "vagrant"
+# Open-source code editor
+cask "visual-studio-code"
+# Remote desktop application focusing on security
+cask "vnc-viewer"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+vscode "dooez.alt-catppuccin-vsc"
+vscode "golang.go"
+vscode "jetbrains.resharper-code"
+vscode "ms-dotnettools.csdevkit"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
