@@ -45,6 +45,8 @@ brew "buildkit"
 brew "bzip2"
 # CD/DVD/Blu-ray premastering and recording software
 brew "cdrtools"
+# JSON Schema CLI
+brew "check-jsonschema"
 # Cross-platform make
 brew "cmake"
 # Manage local application configuration files using templates
