@@ -17,10 +17,10 @@ tap "weaveworks/tap"
 brew "acme"
 # Library for manipulating PNG images
 brew "libpng"
-# Software library to render fonts
-brew "freetype"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Software library to render fonts
+brew "freetype"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Interpreted, interactive, object-oriented programming language
@@ -65,6 +65,8 @@ brew "aws-iam-authenticator"
 brew "aws-nuke"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# B2 Cloud Storage Command-Line Tools
+brew "b2-tools"
 # Minimal BASIC programming language interpreter as defined by ECMA-55
 brew "bas55"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -113,6 +115,8 @@ brew "confd"
 brew "coreutils"
 # Tools to access CP/M file systems
 brew "cpmtools"
+# Tool for browsing source code
+brew "cscope"
 # Top-like interface for container metrics
 brew "ctop"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -137,8 +141,12 @@ brew "docutils"
 brew "dos2unix"
 # DOSBox with accurate emulation and wide testing
 brew "dosbox-x"
+# GNU Emacs text editor
+brew "emacs", link: false
 # Extra modules and scripts for CMake
 brew "extra-cmake-modules"
+# Modern, maintained replacement for ls
+brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
@@ -147,6 +155,8 @@ brew "findutils"
 brew "fizmo"
 # Infamous electronic fortune-cookie generator
 brew "fortune"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # R7RS Scheme implementation, developed to be a handy script interpreter
 brew "gauche"
 # GNU awk utility
@@ -279,6 +289,8 @@ brew "newlisp"
 brew "ngspice"
 # Small build system for use with gyp or CMake
 brew "ninja"
+# Port scanning utility for large networks
+brew "nmap"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Node.js version manager
@@ -339,8 +351,6 @@ brew "scheme48"
 brew "sdcc"
 # Library for using TrueType fonts in SDL applications
 brew "sdl2_ttf"
-# Command-line toolkit for Salesforce development
-brew "sf"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Extensive Java based Scheme interpreter
@@ -488,6 +498,11 @@ cask "font-fira-sans"
 cask "font-fira-sans-condensed"
 cask "font-fira-sans-extra-condensed"
 cask "font-fontdiner-swanky"
+cask "font-google-sans-code"
+cask "font-hack"
+cask "font-hack-nerd-font"
+cask "font-hackgen"
+cask "font-hackgen-nerd"
 cask "font-hammersmith-one"
 cask "font-ibm-plex-mono"
 cask "font-inconsolata"
