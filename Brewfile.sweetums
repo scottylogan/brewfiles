@@ -1,4 +1,5 @@
 tap "aws/tap"
+tap "ericschmar/tap"
 tap "hashicorp/tap"
 tap "nodenv/nodenv"
 tap "scottylogan/brewhouse"
@@ -43,6 +44,8 @@ brew "btop"
 brew "buildkit"
 # Freely available high-quality data compressor
 brew "bzip2"
+# Powerful, enterprise-ready, open source web server with automatic HTTPS
+brew "caddy"
 # CD/DVD/Blu-ray premastering and recording software
 brew "cdrtools"
 # JSON Schema CLI
@@ -63,6 +66,8 @@ brew "docker-buildx"
 brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
+# AST-based pattern checker for JavaScript
+brew "eslint"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
@@ -147,6 +152,8 @@ brew "lsof"
 brew "mactop"
 # Utility for directing compilation
 brew "make"
+# Drop-in replacement for MySQL
+brew "mariadb", restart_service: :changed
 # Text-to-HTML conversion tool
 brew "markdown"
 # Mac App Store command-line interface
@@ -163,6 +170,8 @@ brew "nodenv"
 brew "nuget"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
+# Provides a software solution to manage, store, and distribute sensitive data
+brew "openbao", restart_service: :changed
 # Open source suite of directory software
 brew "openldap"
 # Pinentry for GPG on Mac
@@ -227,6 +236,8 @@ brew "weaveworks/tap/eksctl"
 cask "charles"
 # UI for creating Windows installer ISO from UUPDump
 cask "crystalfetch"
+# Universal database tool and SQL client
+cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
 # Text editor
@@ -256,8 +267,6 @@ cask "iterm2@beta"
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked-app"
-# Orchestrates virtual Ubuntu instances
-cask "multipass"
 # Database administration and development tool for SQL-server
 cask "navicat-for-sql-server"
 # Command-line shell and scripting language
@@ -268,6 +277,8 @@ cask "raycast"
 cask "utm"
 # Development environment
 cask "vagrant"
+# Gives Vagrant VMware plugin access to various VMware functionalities
+cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
 # Remote desktop application focusing on security
