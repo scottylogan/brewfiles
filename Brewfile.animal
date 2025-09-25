@@ -229,6 +229,8 @@ brew "hexyl"
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Fast, highly customisable system info script with LGBTQ+ pride flags
+brew "hyfetch"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Verilog simulation and synthesis tool
@@ -263,6 +265,8 @@ brew "lsusb"
 brew "lwtools"
 # Open source tools for managing network attached LXI compatible instruments
 brew "lxi-tools"
+# System information fetcher, with an emphasis on performance and minimalism
+brew "macchina"
 # Apple Silicon Monitor Top written in Golang
 brew "mactop"
 # Utility for directing compilation
@@ -347,6 +351,8 @@ brew "s3cmd"
 brew "sbcl"
 # Scheme byte-code interpreter
 brew "scheme48"
+# Generate ASCII art with terminal, shell, and OS info
+brew "screenfetch"
 # ANSI C compiler for Intel 8051, Maxim 80DS390, and Zilog Z80
 brew "sdcc"
 # Library for using TrueType fonts in SDL applications
