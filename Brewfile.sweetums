@@ -66,6 +66,8 @@ brew "docker-buildx"
 brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
+# Generic library support script
+brew "libtool"
 # AST-based pattern checker for JavaScript
 brew "eslint"
 # Like neofetch, but much faster because written mostly in C
@@ -136,8 +138,6 @@ brew "kubectx"
 brew "lego"
 # Pager program similar to more
 brew "less"
-# Generic library support script
-brew "libtool"
 # Write licenses to stdout
 brew "licensor"
 # Linux virtual machines
@@ -160,10 +160,14 @@ brew "markdown"
 brew "mas"
 # CLI for Mermaid library
 brew "mermaid-cli"
+# Minifier for HTML, CSS, JS, JSON, SVG, and XML
+brew "minify"
 # Run a Kubernetes cluster locally
 brew "minikube"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
+# Port scanning utility for large networks
+brew "nmap"
 # Node.js version manager
 brew "nodenv"
 # Package manager for Microsoft development platform including .NET
@@ -172,6 +176,8 @@ brew "nuget"
 brew "ollama", restart_service: :changed
 # Provides a software solution to manage, store, and distribute sensitive data
 brew "openbao", restart_service: :changed
+# Development kit for the Java programming language
+brew "openjdk@17"
 # Open source suite of directory software
 brew "openldap"
 # Pinentry for GPG on Mac
@@ -188,8 +194,12 @@ brew "prometheus"
 brew "pssh"
 # Show ps output as a tree
 brew "pstree"
+# Messaging and streaming broker
+brew "rabbitmq", restart_service: :changed
 # Command-line client for the Registration Data Access Protocol
 brew "rdap"
+# Standard unix software packaging tool
+brew "rpm"
 # Command-line tool for the Amazon S3 service
 brew "s3cmd"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -202,6 +212,8 @@ brew "sqlc"
 brew "starship"
 # State of the art linter for the Go programming language
 brew "staticcheck"
+# SVG to PNG converter
+brew "svg2png"
 # Generate clients, server stubs, and docs from an OpenAPI spec
 brew "swagger-codegen"
 # User interface to the TELNET protocol
@@ -297,3 +309,14 @@ vscode "jetbrains.resharper-code"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+go "github.com/kisielk/errcheck"
+go "github.com/davidrjenni/reftools/cmd/fillstruct"
+go "github.com/fzipp/gocyclo/cmd/gocyclo"
+go "golang.org/x/lint/golint"
+go "github.com/alecthomas/gometalinter"
+go "github.com/fatih/gomodifytags"
+go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
+go "github.com/cweill/gotests/gotests"
+go "github.com/gordonklaus/ineffassign"
+go "github.com/client9/misspell/cmd/misspell"
+go "github.com/xuri/xgen/cmd/xgen"
