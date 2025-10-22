@@ -17,12 +17,10 @@ tap "weaveworks/tap"
 brew "acme"
 # Library for manipulating PNG images
 brew "libpng"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Software library to render fonts
 brew "freetype"
-# OpenType text shaping engine
-brew "harfbuzz"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # AI pair programming in your terminal
@@ -167,6 +165,8 @@ brew "gforth"
 brew "gh"
 # Installer for the general purpose language Haskell
 brew "ghcup"
+# OpenType text shaping engine
+brew "harfbuzz"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Interpreter for PostScript and PDF
@@ -451,45 +451,26 @@ cask "alacritty"
 cask "bambu-connect"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
-# Design your own LEGO parts
-cask "bricklink-partdesigner"
-# Build, render, and create LEGO instructions
-cask "bricklink-studio"
-# Virtual Lego modelling
-cask "bricksmith"
-# BrickLink offline management tool
-cask "brickstore"
 # Web debugging Proxy application
 cask "charles"
 # Terminal emulator mimicking the old cathode display
 cask "cool-retro-term"
 # Write, edit, and chat about your code with AI
 cask "cursor"
+# Voice and text chat software
+cask "discord"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-# Password manager that syncs across devices
-cask "dropbox-passwords"
 # Build desktop apps with JavaScript, HTML, and CSS
 cask "electron"
 # Text editor
 cask "emacs-app"
 cask "font-anonymous-pro"
-cask "font-atkinson-hyperlegible"
-cask "font-atkinson-hyperlegible-mono"
-cask "font-atkinson-hyperlegible-next"
 cask "font-benchnine"
 cask "font-cantarell"
 cask "font-computer-modern"
-cask "font-courier-new"
-cask "font-courier-prime"
-cask "font-courier-prime-code"
-cask "font-courier-prime-medium-and-semi-bold"
-cask "font-courier-prime-sans"
 cask "font-crimson-pro"
 cask "font-crimson-text"
-cask "font-dejavu"
-cask "font-dejavu-sans-mono-for-powerline"
-cask "font-dejavu-sans-mono-nerd-font"
 cask "font-droid-sans-mono-for-powerline"
 cask "font-droid-sans-mono-nerd-font"
 cask "font-envy-code-r"
@@ -521,11 +502,6 @@ cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
-cask "font-liberation"
-cask "font-liberation-mono-for-powerline"
-cask "font-liberation-nerd-font"
-cask "font-luxurious-roman"
-cask "font-luxurious-script"
 cask "font-m-plus-1"
 cask "font-m-plus-1-code"
 cask "font-m-plus-1p"
@@ -554,25 +530,13 @@ cask "font-source-sans-3"
 cask "font-source-serif-4"
 cask "font-space-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
-cask "font-ubuntu"
-cask "font-ubuntu-condensed"
-cask "font-ubuntu-mono"
-cask "font-ubuntu-mono-derivative-powerline"
-cask "font-ubuntu-mono-nerd-font"
-cask "font-ubuntu-nerd-font"
-cask "font-ubuntu-sans"
-cask "font-ubuntu-sans-mono"
-cask "font-ubuntu-sans-nerd-font"
 cask "font-victor-mono-nerd-font"
-cask "font-vt323"
 # 3D parametric modeller
 cask "freecad"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Go (golang) IDE
-cask "goland"
 # Web browser
 cask "google-chrome"
 # Tools to protect your emails and files
@@ -581,12 +545,8 @@ cask "gpg-suite"
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
-# Desktop application for JupyterLab
-cask "jupyterlab-app"
 # Electronics design automation suite
 cask "kicad"
-# CAD program for creating virtual LEGO models
-cask "leocad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
@@ -598,8 +558,6 @@ cask "omnigraffle"
 cask "openscad@snapshot"
 # PL2303 USB-to-serial driver
 cask "prolific-pl2303"
-# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
-cask "prusaslicer"
 # Modern programming language in the Lisp/Scheme family
 cask "racket"
 # Imaging utility to install operating systems to a microSD card
@@ -608,8 +566,6 @@ cask "raspberry-pi-imager"
 cask "raycast"
 # 3D modeling software used to create and manipulate 3D models
 cask "sketchup"
-# JDK from the Eclipse Foundation (Adoptium)
-cask "temurin"
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
@@ -628,3 +584,7 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+go "github.com/766b/go-outliner"
+go "github.com/cweill/gotests/gotests"
+go "golang.org/x/tools/cmd/goyacc"
+go "github.com/blynn/nex"
