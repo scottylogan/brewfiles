@@ -72,6 +72,8 @@ brew "docutils"
 brew "libtool"
 # AST-based pattern checker for JavaScript
 brew "eslint"
+# Modern, maintained replacement for ls
+brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
@@ -172,6 +174,8 @@ brew "moreutils"
 brew "nmap"
 # Node.js version manager
 brew "nodenv"
+# Trigger notifications when a process completes
+brew "noti"
 # Package manager for Microsoft development platform including .NET
 brew "nuget"
 # Create, run, and share large language models (LLMs)
