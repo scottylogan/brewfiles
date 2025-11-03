@@ -78,6 +78,8 @@ brew "eza"
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU awk utility
 brew "gawk"
 # Interact with Google Gemini AI models from the command-line
@@ -166,8 +168,6 @@ brew "mas"
 brew "mermaid-cli"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
 brew "minify"
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Port scanning utility for large networks
@@ -204,14 +204,14 @@ brew "pstree"
 brew "rabbitmq", restart_service: :changed
 # Command-line client for the Registration Data Access Protocol
 brew "rdap"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Standard unix software packaging tool
 brew "rpm"
 # Command-line tool for the Amazon S3 service
 brew "s3cmd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Daemon to provide vmnet.framework support for rootless QEMU
-brew "socket_vmnet"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Cross-shell prompt for astronauts
@@ -230,6 +230,10 @@ brew "tenv"
 brew "terminal-notifier"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
+# Language for application scale JavaScript development
+brew "typescript"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Vi 'workalike' with many additional features
@@ -242,6 +246,8 @@ brew "wireguard-tools"
 brew "xmlsectool"
 # Linter for YAML files
 brew "yamllint"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Packer
 brew "hashicorp/tap/packer"
 # EC2 Tools
@@ -252,6 +258,8 @@ brew "scottylogan/brewhouse/misc-scripts"
 brew "weaveworks/tap/eksctl"
 # Web debugging Proxy application
 cask "charles"
+# Create and run Linux containers using lightweight virtual machines
+cask "container"
 # UI for creating Windows installer ISO from UUPDump
 cask "crystalfetch"
 # Universal database tool and SQL client
@@ -297,8 +305,6 @@ cask "raycast"
 cask "utm"
 # Development environment
 cask "vagrant"
-# Gives Vagrant VMware plugin access to various VMware functionalities
-cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
 # Remote desktop application focusing on security
@@ -319,14 +325,3 @@ vscode "jetbrains.resharper-code"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
-go "github.com/kisielk/errcheck"
-go "github.com/davidrjenni/reftools/cmd/fillstruct"
-go "github.com/fzipp/gocyclo/cmd/gocyclo"
-go "golang.org/x/lint/golint"
-go "github.com/alecthomas/gometalinter"
-go "github.com/fatih/gomodifytags"
-go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
-go "github.com/cweill/gotests/gotests"
-go "github.com/gordonklaus/ineffassign"
-go "github.com/client9/misspell/cmd/misspell"
-go "github.com/xuri/xgen/cmd/xgen"
