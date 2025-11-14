@@ -54,6 +54,8 @@ brew "check-jsonschema"
 brew "cmake"
 # Manage local application configuration files using templates
 brew "confd"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -164,6 +166,8 @@ brew "mariadb", restart_service: :changed
 brew "markdown"
 # Mac App Store command-line interface
 brew "mas"
+# Show markdown documents on text terminals
+brew "mdcat"
 # CLI for Mermaid library
 brew "mermaid-cli"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
@@ -181,7 +185,7 @@ brew "nuget"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
 # Provides a software solution to manage, store, and distribute sensitive data
-brew "openbao", restart_service: :changed
+brew "openbao"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Open source suite of directory software
@@ -250,6 +254,8 @@ brew "yamllint"
 brew "zoxide"
 # Packer
 brew "hashicorp/tap/packer"
+# Vault
+brew "hashicorp/tap/vault"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
 # Miscelleaneous Scripts
@@ -268,19 +274,16 @@ cask "dbeaver-community"
 cask "dotnet-sdk"
 # Text editor
 cask "emacs-app"
-cask "font-anonymous-pro"
-cask "font-atkinson-hyperlegible"
-cask "font-atkinson-hyperlegible-mono"
-cask "font-atkinson-hyperlegible-next"
-cask "font-cantarell"
-cask "font-fira-code"
+cask "font-caskaydia-mono-nerd-font"
+cask "font-commit-mono-nerd-font"
+cask "font-fantasque-sans-mono-nerd-font"
 cask "font-fira-code-nerd-font"
-cask "font-fira-mono"
-cask "font-fira-mono-nerd-font"
-cask "font-iosevka-slab"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
+cask "font-museo"
+cask "font-sauce-code-pro-nerd-font"
 cask "font-sf-mono"
+cask "font-sf-mono-nerd-font-ligaturized"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -311,6 +314,8 @@ cask "visual-studio-code"
 cask "vnc-viewer"
 # Connect to Windows
 cask "windows-app"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
@@ -319,9 +324,16 @@ mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
 vscode "dooez.alt-catppuccin-vsc"
 vscode "golang.go"
 vscode "jetbrains.resharper-code"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+go "github.com/fzipp/gocyclo/cmd/gocyclo"
+go "golang.org/x/lint/golint"
+go "github.com/alecthomas/gometalinter"
+go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
+go "github.com/gordonklaus/ineffassign"
+go "github.com/client9/misspell/cmd/misspell"
