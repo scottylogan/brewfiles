@@ -62,12 +62,6 @@ brew "coreutils"
 brew "curl"
 # Load/unload environment variables based on $PWD
 brew "direnv"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
-# Docker CLI plugin for extended build capabilities with BuildKit
-brew "docker-buildx"
-# Platform keystore credential helper for Docker
-brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
 # Generic library support script
@@ -98,6 +92,8 @@ brew "git-crypt"
 brew "git-filter-repo"
 # Open-source GitLab command-line tool
 brew "glab"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -232,6 +228,10 @@ brew "telnet"
 brew "tenv"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
+# Terraform Language Server
+brew "terraform-ls"
+# CLI tool to generate terraform files from existing infrastructure
+brew "terraformer"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Language for application scale JavaScript development
@@ -326,8 +326,10 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "dooez.alt-catppuccin-vsc"
+vscode "eamodio.gitlens"
 vscode "golang.go"
 vscode "jetbrains.resharper-code"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
@@ -337,3 +339,4 @@ go "github.com/alecthomas/gometalinter"
 go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
 go "github.com/gordonklaus/ineffassign"
 go "github.com/client9/misspell/cmd/misspell"
+go "golang.org/x/pkgsite/cmd/pkgsite"
