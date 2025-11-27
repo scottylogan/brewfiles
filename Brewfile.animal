@@ -259,6 +259,8 @@ brew "libedit"
 brew "licensor"
 # Linux virtual machines
 brew "lima"
+# Extensible Cyclomatic Complexity Analyzer
+brew "lizard-analyzer"
 # Utility to list open files
 brew "lsof"
 # List USB devices, just like the Linux lsusb command
@@ -441,6 +443,8 @@ brew "hashicorp/tap/vault"
 brew "rosco-m68k/toolchain/vasm-all"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
+# GAL assembler
+brew "scottylogan/brewhouse/galasm"
 # Miscelleaneous Scripts
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
@@ -551,7 +555,6 @@ cask "kicad"
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked-app"
-cask "nscope"
 # Visual communication software
 cask "omnigraffle"
 # Programmable solid 3D CAD modeller
