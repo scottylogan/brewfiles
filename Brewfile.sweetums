@@ -62,6 +62,12 @@ brew "coreutils"
 brew "curl"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
 # Text processing system for reStructuredText
 brew "docutils"
 # Generic library support script
@@ -212,6 +218,8 @@ brew "rpm"
 brew "s3cmd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Cross-shell prompt for astronauts
@@ -333,6 +341,7 @@ vscode "ms-azuretools.vscode-containers"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+go "github.com/uudashr/gocognit/cmd/gocognit"
 go "github.com/fzipp/gocyclo/cmd/gocyclo"
 go "golang.org/x/lint/golint"
 go "github.com/alecthomas/gometalinter"
