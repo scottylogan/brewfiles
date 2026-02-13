@@ -1,4 +1,6 @@
+tap "ariga/tap"
 tap "aws/tap"
+tap "d12frosted/emacs-plus"
 tap "ericschmar/tap"
 tap "hashicorp/tap"
 tap "nodenv/nodenv"
@@ -10,6 +12,8 @@ brew "xz"
 brew "ansible"
 # CLI tool for building Ansible Execution Environments (Containers)
 brew "ansible-builder"
+# CLI tool for scaffolding Ansible Content
+brew "ansible-creator"
 # Language Server for Ansible Files
 brew "ansible-language-server"
 # Checks ansible playbooks for practices and behaviour
@@ -60,6 +64,8 @@ brew "container"
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Debugger for the Go programming language
+brew "delve"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Pack, ship and run any application as a lightweight container
@@ -96,6 +102,8 @@ brew "git-cal"
 brew "git-crypt"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Official GitLab CI runner
+brew "gitlab-runner"
 # Open-source GitLab command-line tool
 brew "glab"
 # GNU implementation of the famous stream editor
@@ -104,7 +112,7 @@ brew "gnu-sed"
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Opinionated Go source code linter
 brew "go-critic"
@@ -128,6 +136,8 @@ brew "groff"
 brew "gzip"
 # Kubernetes package manager
 brew "helm"
+# Deploy Kubernetes Helm Charts
+brew "helmfile"
 # HTTP load generator, ApacheBench (ab) replacement
 brew "hey"
 # Improved top (interactive process viewer)
@@ -138,6 +148,8 @@ brew "hub"
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Super fast CLI tool to decode and encode JWTs built in Rust
+brew "jwt-cli"
 # Static analysis tool for Kubernetes YAML files and Helm charts
 brew "kube-linter"
 # Kubernetes command-line interface
@@ -156,16 +168,18 @@ brew "lima"
 brew "qemu"
 # Additional guest agents for Lima
 brew "lima-additional-guestagents"
+# LLM inference in C/C++
+brew "llama.cpp"
+# Count lines of code quickly
+brew "loc"
 # Utility to list open files
 brew "lsof"
-# Apple Silicon Monitor Top written in Golang
+# Apple Silicon Monitor Top written in Go Lang
 brew "mactop"
 # Utility for directing compilation
 brew "make"
 # Drop-in replacement for MySQL
-brew "mariadb", restart_service: :changed
-# Text-to-HTML conversion tool
-brew "markdown"
+brew "mariadb"
 # Mac App Store command-line interface
 brew "mas"
 # Show markdown documents on text terminals
@@ -174,8 +188,12 @@ brew "mdcat"
 brew "mermaid-cli"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
 brew "minify"
+# Automated testing for Ansible roles
+brew "molecule"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
+# Turn marked-up plain text into well-formatted documents
+brew "multimarkdown"
 # Port scanning utility for large networks
 brew "nmap"
 # Node.js version manager
@@ -185,7 +203,7 @@ brew "noti"
 # Package manager for Microsoft development platform including .NET
 brew "nuget"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama"
 # Provides a software solution to manage, store, and distribute sensitive data
 brew "openbao"
 # Development kit for the Java programming language
@@ -207,7 +225,7 @@ brew "pssh"
 # Show ps output as a tree
 brew "pstree"
 # Messaging and streaming broker
-brew "rabbitmq", restart_service: :changed
+brew "rabbitmq"
 # Command-line client for the Registration Data Access Protocol
 brew "rdap"
 # Search tool like grep and The Silver Searcher
@@ -218,6 +236,8 @@ brew "rpm"
 brew "s3cmd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Simple tool to count source lines of code
+brew "sloc"
 # Daemon to provide vmnet.framework support for rootless QEMU
 brew "socket_vmnet"
 # Generate type safe Go from SQL
@@ -258,8 +278,14 @@ brew "wireguard-tools"
 brew "xmlsectool"
 # Linter for YAML files
 brew "yamllint"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# A database toolkit
+brew "ariga/tap/atlas"
+# GNU Emacs text editor
+brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-compress-install", "with-ctags", "with-imagemagick", "with-retro-emacs-logo-icon", "with-xwidgets"], link: false
 # Packer
 brew "hashicorp/tap/packer"
 # Vault
@@ -272,8 +298,6 @@ brew "scottylogan/brewhouse/misc-scripts"
 brew "weaveworks/tap/eksctl"
 # Web debugging Proxy application
 cask "charles"
-# Create and run Linux containers using lightweight virtual machines
-cask "container"
 # UI for creating Windows installer ISO from UUPDump
 cask "crystalfetch"
 # Universal database tool and SQL client
@@ -286,6 +310,7 @@ cask "font-caskaydia-mono-nerd-font"
 cask "font-commit-mono-nerd-font"
 cask "font-fantasque-sans-mono-nerd-font"
 cask "font-fira-code-nerd-font"
+cask "font-google-sans-code"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
 cask "font-museo"
@@ -306,8 +331,8 @@ cask "iterm2@beta"
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked-app"
-# Database administration and development tool for SQL-server
-cask "navicat-for-sql-server"
+# Visual communication software
+cask "omnigraffle"
 # Command-line shell and scripting language
 cask "powershell"
 # Control your tools with a few keystrokes
@@ -324,7 +349,6 @@ cask "vnc-viewer"
 cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
-mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
@@ -333,19 +357,17 @@ mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
-vscode "dooez.alt-catppuccin-vsc"
-vscode "eamodio.gitlens"
-vscode "golang.go"
-vscode "jetbrains.resharper-code"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-dotnettools.csdevkit"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
+go "github.com/kisielk/errcheck"
+go "github.com/davidrjenni/reftools/cmd/fillstruct"
+go "golang.org/dl/go1.26rc2"
 go "github.com/uudashr/gocognit/cmd/gocognit"
 go "github.com/fzipp/gocyclo/cmd/gocyclo"
 go "golang.org/x/lint/golint"
 go "github.com/alecthomas/gometalinter"
+go "github.com/fatih/gomodifytags"
 go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
+go "github.com/cweill/gotests/gotests"
 go "github.com/gordonklaus/ineffassign"
 go "github.com/client9/misspell/cmd/misspell"
 go "golang.org/x/pkgsite/cmd/pkgsite"
+go "github.com/xuri/xgen/cmd/xgen"
