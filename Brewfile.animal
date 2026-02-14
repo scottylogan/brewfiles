@@ -1,5 +1,6 @@
 tap "adoptopenjdk/openjdk"
 tap "aws/tap"
+tap "cirruslabs/cli"
 tap "freecad/freecad"
 tap "go-swagger/go-swagger"
 tap "gromgit/fuse"
@@ -189,7 +190,7 @@ brew "gnu-prolog"
 brew "gnu-tar"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Opinionated Go source code linter
 brew "go-critic"
@@ -237,6 +238,10 @@ brew "hyfetch"
 brew "hyperfine"
 # Verilog simulation and synthesis tool
 brew "icarus-verilog"
+# Calculate various network masks, etc. from a given IP address
+brew "ipcalc"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Run local Kubernetes cluster in Docker
@@ -253,6 +258,8 @@ brew "ldapvi"
 brew "lego"
 # Pager program similar to more
 brew "less"
+# Sophisticated file transfer program
+brew "lftp"
 # BSD-style licensed readline alternative
 brew "libedit"
 # Write licenses to stdout
@@ -261,6 +268,8 @@ brew "licensor"
 brew "lima"
 # Extensible Cyclomatic Complexity Analyzer
 brew "lizard-analyzer"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
 # Utility to list open files
 brew "lsof"
 # List USB devices, just like the Linux lsusb command
@@ -271,7 +280,7 @@ brew "lwtools"
 brew "lxi-tools"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
-# Apple Silicon Monitor Top written in Golang
+# Apple Silicon Monitor Top written in Go Lang
 brew "mactop"
 # Utility for directing compilation
 brew "make"
@@ -291,6 +300,8 @@ brew "moreutils"
 brew "mtools"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
+# FTP client with an advanced user interface
+brew "ncftp"
 # Lisp-like, general-purpose scripting language
 brew "newlisp"
 # Spice circuit simulator
@@ -437,6 +448,8 @@ brew "zigup"
 brew "zlib"
 # CP/M 2/3 emulator for cross-compiling and CP/M tools under UNIX
 brew "zxcc"
+# Run macOS and Linux VMs on Apple Hardware
+brew "cirruslabs/cli/tart"
 # Vault
 brew "hashicorp/tap/vault"
 # vasm portable and retargetable assembler.
@@ -451,6 +464,8 @@ brew "scottylogan/brewhouse/misc-scripts"
 brew "weaveworks/tap/eksctl"
 # Classic After Dark screensaver set
 cask "after-dark-classic"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Tool for linking with Bambu Lab 3D printers
 cask "bambu-connect"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
@@ -549,6 +564,8 @@ cask "gpg-suite"
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
+# Utility for comparing and merging files and directories
+cask "kdiff3"
 # Electronics design automation suite
 cask "kicad"
 # Discover, download, and run local LLMs
@@ -575,6 +592,8 @@ cask "utm"
 cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
+# Connect to Windows
+cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # REST, GraphQL and gRPC client
@@ -582,11 +601,6 @@ cask "yaak"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Kindle", id: 302584613
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
