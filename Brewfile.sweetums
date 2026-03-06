@@ -18,6 +18,8 @@ brew "ansible-creator"
 brew "ansible-language-server"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
+# Record and share terminal sessions
+brew "asciinema"
 # Perf monitoring CLI tool for Apple Silicon
 brew "asitop"
 # Automatic configure script builder
@@ -76,8 +78,6 @@ brew "docker-buildx"
 brew "docker-compose"
 # Text processing system for reStructuredText
 brew "docutils"
-# Generic library support script
-brew "libtool"
 # AST-based pattern checker for JavaScript
 brew "eslint"
 # Modern, maintained replacement for ls
@@ -100,8 +100,12 @@ brew "git"
 brew "git-cal"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Syntax highlighted side-by-side diffs in your terminal
+brew "git-split-diffs"
 # Official GitLab CI runner
 brew "gitlab-runner"
 # Open-source GitLab command-line tool
@@ -146,6 +150,8 @@ brew "htop"
 brew "hub"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Generic library support script
+brew "libtool"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Super fast CLI tool to decode and encode JWTs built in Rust
@@ -184,8 +190,6 @@ brew "mariadb"
 brew "mas"
 # Show markdown documents on text terminals
 brew "mdcat"
-# CLI for Mermaid library
-brew "mermaid-cli"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
 brew "minify"
 # Automated testing for Ansible roles
@@ -224,8 +228,6 @@ brew "prometheus"
 brew "pssh"
 # Show ps output as a tree
 brew "pstree"
-# Messaging and streaming broker
-brew "rabbitmq"
 # Command-line client for the Registration Data Access Protocol
 brew "rdap"
 # Search tool like grep and The Silver Searcher
@@ -369,5 +371,6 @@ go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
 go "github.com/cweill/gotests/gotests"
 go "github.com/gordonklaus/ineffassign"
 go "github.com/client9/misspell/cmd/misspell"
+go "github.com/coolamit/mermaid-cli/cmd/mmd-cli"
 go "golang.org/x/pkgsite/cmd/pkgsite"
 go "github.com/xuri/xgen/cmd/xgen"
