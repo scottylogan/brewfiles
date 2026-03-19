@@ -5,6 +5,7 @@ tap "freecad/freecad"
 tap "go-swagger/go-swagger"
 tap "gromgit/fuse"
 tap "hashicorp/tap"
+tap "jimeh/emacs-builds"
 tap "lifepillar/appleii"
 tap "linuxkit/linuxkit"
 tap "nodenv/nodenv"
@@ -142,8 +143,6 @@ brew "docutils"
 brew "dos2unix"
 # DOSBox with accurate emulation and wide testing
 brew "dosbox-x"
-# GNU Emacs text editor
-brew "emacs", link: false
 # Extra modules and scripts for CMake
 brew "extra-cmake-modules"
 # Modern, maintained replacement for ls
@@ -482,8 +481,8 @@ cask "discord"
 cask "dropbox"
 # Build desktop apps with JavaScript, HTML, and CSS
 cask "electron"
-# Text editor
-cask "emacs-app"
+# GNU Emacs text editor
+cask "jimeh/emacs-builds/emacs-app"
 cask "font-anonymous-pro"
 cask "font-benchnine"
 cask "font-cantarell"
@@ -586,8 +585,6 @@ cask "raspberry-pi-imager"
 cask "raycast"
 # 3D modeling software used to create and manipulate 3D models
 cask "sketchup"
-# Virtual machines UI using QEMU
-cask "utm"
 # Development environment
 cask "vagrant"
 # Open-source code editor
@@ -601,6 +598,11 @@ cask "yaak"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
