@@ -1,8 +1,8 @@
 tap "ariga/tap"
 tap "aws/tap"
-tap "d12frosted/emacs-plus"
 tap "ericschmar/tap"
 tap "hashicorp/tap"
+tap "jimeh/emacs-builds"
 tap "nodenv/nodenv"
 tap "scottylogan/brewhouse"
 tap "weaveworks/tap"
@@ -66,6 +66,8 @@ brew "container"
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Version control system
+brew "cvs"
 # Debugger for the Go programming language
 brew "delve"
 # Load/unload environment variables based on $PWD
@@ -76,6 +78,8 @@ brew "docker"
 brew "docker-buildx"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
 # AST-based pattern checker for JavaScript
@@ -150,8 +154,6 @@ brew "htop"
 brew "hub"
 # Command-line benchmarking tool
 brew "hyperfine"
-# Generic library support script
-brew "libtool"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Super fast CLI tool to decode and encode JWTs built in Rust
@@ -166,6 +168,8 @@ brew "kubectx"
 brew "lego"
 # Pager program similar to more
 brew "less"
+# Generic library support script
+brew "libtool"
 # Write licenses to stdout
 brew "licensor"
 # Linux virtual machines
@@ -198,6 +202,8 @@ brew "molecule"
 brew "moreutils"
 # Turn marked-up plain text into well-formatted documents
 brew "multimarkdown"
+# Utility for managing network connections
+brew "netcat"
 # Port scanning utility for large networks
 brew "nmap"
 # Node.js version manager
@@ -222,6 +228,8 @@ brew "pipx"
 brew "postgresql@15", restart_service: :changed
 # Serves a fully RESTful API from any existing PostgreSQL database
 brew "postgrest"
+# Command-line shell and scripting language
+brew "powershell", link: false
 # Service monitoring system and time series database
 brew "prometheus"
 # Parallel versions of OpenSSH and related tools
@@ -286,8 +294,6 @@ brew "yq"
 brew "zoxide"
 # A database toolkit
 brew "ariga/tap/atlas"
-# GNU Emacs text editor
-brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-compress-install", "with-ctags", "with-imagemagick", "with-retro-emacs-logo-icon", "with-xwidgets"], link: false
 # Packer
 brew "hashicorp/tap/packer"
 # Vault
@@ -306,8 +312,8 @@ cask "crystalfetch"
 cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
-# Text editor
-cask "emacs-app"
+# GNU Emacs text editor
+cask "jimeh/emacs-builds/emacs-app"
 cask "font-caskaydia-mono-nerd-font"
 cask "font-commit-mono-nerd-font"
 cask "font-fantasque-sans-mono-nerd-font"
@@ -321,6 +327,8 @@ cask "font-sf-mono"
 cask "font-sf-mono-nerd-font-ligaturized"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Git interface focused on visual interaction
+cask "gitup-app"
 # Web browser
 cask "google-chrome"
 # Tools to protect your emails and files
