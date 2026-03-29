@@ -247,10 +247,10 @@ brew "jq"
 brew "kind"
 # Static analysis tool for Kubernetes YAML files and Helm charts
 brew "kube-linter"
-# Kubernetes command-line interface
-brew "kubernetes-cli"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Update LDAP entries with a text editor
 brew "ldapvi"
 # Let's Encrypt client and ACME library
@@ -315,6 +315,8 @@ brew "pkgconf"
 brew "nodenv"
 # Trigger notifications when a process completes
 brew "noti"
+# Network Time Protocol (NTP) Distribution
+brew "ntp"
 # Network performance measurement tool
 brew "nuttcp"
 # VHDL compiler and simulator
@@ -599,11 +601,18 @@ cask "yaak"
 cask "zoom"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
+mas "Logic Pro", id: 634148309
 mas "Numbers", id: 409203825
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
 mas "Pages", id: 409201541
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
 go "github.com/blynn/nex"
+npm "@anthropic-ai/claude-code"
+npm "@google/gemini-cli"
+npm "corepack"
