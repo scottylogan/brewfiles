@@ -215,7 +215,7 @@ brew "noti"
 # Package manager for Microsoft development platform including .NET
 brew "nuget"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama"
 # Provides a software solution to manage, store, and distribute sensitive data
 brew "openbao"
 # Development kit for the Java programming language
@@ -232,6 +232,8 @@ brew "postgresql@15", restart_service: :changed
 brew "postgrest"
 # Command-line shell and scripting language
 brew "powershell", link: false
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # Service monitoring system and time series database
 brew "prometheus"
 # Parallel versions of OpenSSH and related tools
@@ -312,6 +314,8 @@ brew "scottylogan/brewhouse/misc-scripts"
 brew "weaveworks/tap/eksctl"
 # Web debugging Proxy application
 cask "charles"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
 # UI for creating Windows installer ISO from UUPDump
