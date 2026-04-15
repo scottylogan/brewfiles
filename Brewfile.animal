@@ -206,7 +206,7 @@ brew "gotests"
 # Database client and tools for the Go vulnerability database
 brew "govulncheck"
 # Gorgeous metric visualizations and dashboards for timeseries databases
-brew "grafana", restart_service: :changed
+brew "grafana"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
@@ -284,7 +284,7 @@ brew "mactop"
 # Utility for directing compilation
 brew "make"
 # Drop-in replacement for MySQL
-brew "mariadb", restart_service: :changed
+brew "mariadb"
 # Text-to-HTML conversion tool
 brew "markdown"
 # Mac App Store command-line interface
@@ -322,9 +322,11 @@ brew "nuttcp"
 # VHDL compiler and simulator
 brew "nvc"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama"
 # On-chip debugging, in-system programming and boundary-scan testing
 brew "open-ocd"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Development kit for the Java programming language
 brew "openjdk"
 # Open source suite of directory software
@@ -342,11 +344,11 @@ brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Object-relational database system
-brew "postgresql@17", restart_service: :changed
+brew "postgresql@17"
 # Serves a fully RESTful API from any existing PostgreSQL database
 brew "postgrest"
 # Service monitoring system and time series database
-brew "prometheus", restart_service: :changed
+brew "prometheus"
 # Protoc plugin that generates code for gRPC-Go clients
 brew "protoc-gen-go-grpc"
 # Parallel versions of OpenSSH and related tools
@@ -563,14 +565,14 @@ cask "google-chrome"
 cask "gpg-suite"
 # Vector graphics editor
 cask "inkscape"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2@beta"
 # Utility for comparing and merging files and directories
 cask "kdiff3"
 # Electronics design automation suite
 cask "kicad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# SPICE simulation software, schematic capture and waveform viewer
+cask "ltspice"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
 cask "marked-app"
 # Visual communication software
@@ -599,20 +601,20 @@ cask "xquartz"
 cask "yaak"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
-mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
-mas "Pages", id: 361309726
+mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
 go "github.com/blynn/nex"
-npm "@anthropic-ai/claude-code"
 npm "@google/gemini-cli"
 npm "corepack"
