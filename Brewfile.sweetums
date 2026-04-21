@@ -222,6 +222,8 @@ brew "openbao"
 brew "openjdk@17"
 # Open source suite of directory software
 brew "openldap"
+# AI agent toolkit
+brew "pi-coding-agent", link: false
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
@@ -276,6 +278,8 @@ brew "terraform-ls"
 brew "terraformer"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
+# Terminal multiplexer
+brew "tmux"
 # Language for application scale JavaScript development
 brew "typescript"
 # Language Server Protocol implementation for TypeScript wrapping tsserver
@@ -391,6 +395,7 @@ mas "Xcode", id: 497799835
 vscode "continue.continue"
 vscode "github.copilot-chat"
 vscode "golang.go"
+vscode "renesaarsoo.sql-formatter-vsc"
 go "github.com/kisielk/errcheck"
 go "github.com/davidrjenni/reftools/cmd/fillstruct"
 go "golang.org/dl/go1.26rc2"
