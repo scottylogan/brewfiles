@@ -20,10 +20,6 @@ brew "ansible-creator"
 brew "ansible-language-server"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
-# Record and share terminal sessions
-brew "asciinema"
-# Perf monitoring CLI tool for Apple Silicon
-brew "asitop"
 # Automatic configure script builder
 brew "autoconf"
 # Collection of over 500 reusable autoconf macros
@@ -52,10 +48,6 @@ brew "btop"
 brew "buildkit"
 # Freely available high-quality data compressor
 brew "bzip2"
-# Powerful, enterprise-ready, open source web server with automatic HTTPS
-brew "caddy"
-# CD/DVD/Blu-ray premastering and recording software
-brew "cdrtools"
 # JSON Schema CLI
 brew "check-jsonschema"
 # Cross-platform make
@@ -68,8 +60,6 @@ brew "container"
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Version control system
-brew "cvs"
 # Debugger for the Go programming language
 brew "delve"
 # Load/unload environment variables based on $PWD
@@ -194,8 +184,6 @@ brew "make"
 brew "mariadb"
 # Mac App Store command-line interface
 brew "mas"
-# Show markdown documents on text terminals
-brew "mdcat"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
 brew "minify"
 # Automated testing for Ansible roles
@@ -238,8 +226,6 @@ brew "powershell", link: false
 brew "prettier"
 # Service monitoring system and time series database
 brew "prometheus"
-# Parallel versions of OpenSSH and related tools
-brew "pssh"
 # Show ps output as a tree
 brew "pstree"
 # Command-line client for the Registration Data Access Protocol
@@ -355,8 +341,6 @@ cask "gitup-app"
 cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
-# IDE for Java development - community edition
-cask "intellij-idea-ce"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2@beta"
 # Discover, download, and run local LLMs
