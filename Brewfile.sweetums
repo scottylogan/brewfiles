@@ -124,6 +124,8 @@ brew "golangci-lint"
 brew "gomplate"
 # Language server for the Go language
 brew "gopls"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser"
 # Golang security checker
 brew "gosec"
 # Database client and tools for the Go vulnerability database
@@ -211,7 +213,7 @@ brew "openjdk@17"
 # Open source suite of directory software
 brew "openldap"
 # AI agent toolkit
-brew "pi-coding-agent", link: false
+brew "pi-coding-agent"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
