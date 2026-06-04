@@ -130,7 +130,7 @@ brew "dfu-util"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
 # Platform keystore credential helper for Docker
@@ -357,6 +357,10 @@ brew "pssh"
 brew "pstree"
 # Python Language Server for the Language Server Protocol
 brew "python-lsp-server"
+# Python library for creating static, animated, and interactive visualizations
+brew "python-matplotlib"
+# Tensors and dynamic neural networks
+brew "pytorch"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Client/server application for remote execution of tasks
@@ -475,16 +479,18 @@ cask "bambu-connect"
 cask "bambu-studio"
 # Web debugging Proxy application
 cask "charles"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Create and run Linux containers using lightweight virtual machines
 cask "container"
 # Terminal emulator mimicking the old cathode display
 cask "cool-retro-term"
+# Logic designer and circuit simulator
+cask "digital"
 # Voice and text chat software
 cask "discord"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-# Build desktop apps with JavaScript, HTML, and CSS
-cask "electron"
 # GNU Emacs text editor
 cask "jimeh/emacs-builds/emacs-app"
 cask "font-anonymous-pro"
@@ -571,6 +577,8 @@ cask "kdiff3"
 cask "kicad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Digital logic designer and simulator
+cask "logisim-evolution"
 # SPICE simulation software, schematic capture and waveform viewer
 cask "ltspice"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
@@ -589,6 +597,8 @@ cask "raspberry-pi-imager"
 cask "raycast"
 # 3D modeling software used to create and manipulate 3D models
 cask "sketchup"
+# Virtual machines UI using QEMU
+cask "utm"
 # Development environment
 cask "vagrant"
 # Open-source code editor
@@ -604,14 +614,14 @@ cask "zoom"
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
 mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
