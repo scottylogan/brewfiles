@@ -1,20 +1,20 @@
-tap "adoptopenjdk/openjdk"
-tap "aws/tap"
-tap "cirruslabs/cli"
-tap "freecad/freecad"
-tap "go-swagger/go-swagger"
-tap "gromgit/fuse"
-tap "hashicorp/tap"
-tap "jimeh/emacs-builds"
-tap "lifepillar/appleii"
-tap "linuxkit/linuxkit"
-tap "nodenv/nodenv"
-tap "osx-cross/arm"
-tap "osx-cross/openocd"
-tap "riscv-software-src/riscv"
-tap "rosco-m68k/toolchain"
-tap "scottylogan/brewhouse"
-tap "weaveworks/tap"
+tap "adoptopenjdk/openjdk", "https://github.com/AdoptOpenJDK/homebrew-openjdk", trusted: true
+tap "aws/tap", trusted: true
+tap "cirruslabs/cli", trusted: true
+tap "freecad/freecad", trusted: true
+tap "go-swagger/go-swagger", trusted: true
+tap "gromgit/fuse", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "jimeh/emacs-builds", trusted: true
+tap "lifepillar/appleii", trusted: true
+tap "linuxkit/linuxkit", trusted: true
+tap "nodenv/nodenv", trusted: true
+tap "osx-cross/arm", trusted: true
+tap "osx-cross/openocd", trusted: true
+tap "riscv-software-src/riscv", trusted: true
+tap "rosco-m68k/toolchain", trusted: true
+tap "scottylogan/brewhouse", trusted: true
+tap "weaveworks/tap", trusted: true
 # Crossassembler for multiple environments
 brew "acme"
 # Library for manipulating PNG images
@@ -43,8 +43,8 @@ brew "arduino-cli"
 brew "asm6809"
 # Go Assembler Formatter
 brew "asmfmt"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
+# SDL2 compatibility layer that uses SDL3 behind the scenes
+brew "sdl2-compat"
 # Atari 8-bit machine emulator
 brew "atari800"
 # Atari MAC/65 compatible assembler for Unix
