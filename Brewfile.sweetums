@@ -1,13 +1,13 @@
-tap "anomalyco/tap"
-tap "ariga/tap"
-tap "aws/tap"
-tap "ddev/ddev"
-tap "ericschmar/tap"
-tap "hashicorp/tap"
-tap "jimeh/emacs-builds"
-tap "nodenv/nodenv"
-tap "scottylogan/brewhouse"
-tap "weaveworks/tap"
+tap "anomalyco/tap", trusted: true
+tap "ariga/tap", trusted: true
+tap "aws/tap", trusted: true
+tap "ddev/ddev", trusted: true
+tap "ericschmar/tap", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "jimeh/emacs-builds", trusted: true
+tap "nodenv/nodenv", trusted: true
+tap "scottylogan/brewhouse", trusted: true
+tap "weaveworks/tap", trusted: true
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Automate deployment, configuration, and upgrading
@@ -86,8 +86,6 @@ brew "findutils"
 brew "fzf"
 # GNU awk utility
 brew "gawk"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -172,6 +170,8 @@ brew "lima"
 brew "qemu"
 # Additional guest agents for Lima
 brew "lima-additional-guestagents"
+# Lynx-like WWW browser that supports tables, menus, etc.
+brew "links"
 # LLM inference in C/C++
 brew "llama.cpp"
 # Count lines of code quickly
@@ -223,7 +223,7 @@ brew "postgresql@15", restart_service: :changed
 # Serves a fully RESTful API from any existing PostgreSQL database
 brew "postgrest"
 # Command-line shell and scripting language
-brew "powershell", link: false
+brew "powershell"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Service monitoring system and time series database
@@ -270,8 +270,6 @@ brew "tenv"
 brew "terminal-notifier"
 # Terraform Language Server
 brew "terraform-ls"
-# CLI tool to generate terraform files from existing infrastructure
-brew "terraformer"
 # Static analysis security scanner for your terraform code
 brew "tfsec"
 # Terminal multiplexer
@@ -308,6 +306,8 @@ brew "hashicorp/tap/packer"
 brew "hashicorp/tap/vault"
 # EC2 Tools
 brew "scottylogan/brewhouse/ec2-tools"
+# LDAP Scripts
+brew "scottylogan/brewhouse/ldap-scripts"
 # Miscelleaneous Scripts
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
@@ -376,15 +376,15 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
-mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "continue.continue"
 vscode "golang.go"
