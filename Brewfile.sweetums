@@ -326,6 +326,8 @@ cask "dbeaver-community"
 cask "dotnet-sdk"
 # GNU Emacs text editor
 cask "jimeh/emacs-builds/emacs-app"
+# Web browser
+cask "firefox"
 cask "font-caskaydia-mono-nerd-font"
 cask "font-commit-mono-nerd-font"
 cask "font-fantasque-sans-mono-nerd-font"
