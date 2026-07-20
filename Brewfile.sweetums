@@ -361,7 +361,6 @@ cask "lm-studio"
 cask "marked-app"
 # Visual communication software
 cask "omnigraffle"
-# Command-line shell and scripting language
 cask "powershell"
 # Control your tools with a few keystrokes
 cask "raycast"
@@ -378,13 +377,13 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
+mas "Numbers", id: 409203825
 mas "Pages", id: 361309726
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
