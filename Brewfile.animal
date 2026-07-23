@@ -160,6 +160,8 @@ brew "fzf"
 brew "gauche"
 # GNU awk utility
 brew "gawk"
+# TIFF library and utilities
+brew "libtiff"
 # Implementation of the ANS Forth language
 brew "gforth"
 # GitHub command-line tool
