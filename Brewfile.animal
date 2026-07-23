@@ -1,6 +1,5 @@
 tap "adoptopenjdk/openjdk", "https://github.com/AdoptOpenJDK/homebrew-openjdk", trusted: true
 tap "aws/tap", trusted: true
-tap "cirruslabs/cli", trusted: true
 tap "freecad/freecad", trusted: true
 tap "go-swagger/go-swagger", trusted: true
 tap "gromgit/fuse", trusted: true
@@ -455,8 +454,6 @@ brew "zigup"
 brew "zlib"
 # CP/M 2/3 emulator for cross-compiling and CP/M tools under UNIX
 brew "zxcc"
-# Run macOS and Linux VMs on Apple Hardware
-brew "cirruslabs/cli/tart"
 # Vault
 brew "hashicorp/tap/vault"
 # vasm portable and retargetable assembler.
@@ -613,14 +610,14 @@ cask "zoom"
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
 mas "Numbers", id: 409203825
 mas "Numbers Creator Studio", id: 361304891
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
