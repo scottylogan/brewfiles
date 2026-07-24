@@ -196,6 +196,8 @@ brew "gnupg"
 brew "go-critic"
 # Analyzing the dependencies in compiled Golang binaries
 brew "go-size-analyzer"
+# Fast linters runner for Go
+brew "golangci-lint"
 # Command-line Golang template processor
 brew "gomplate"
 # Language server for the Go language
@@ -276,8 +278,6 @@ brew "lsof"
 brew "lsusb"
 # Cross-development tools for Motorola 6809 and Hitachi 6309
 brew "lwtools"
-# Open source tools for managing network attached LXI compatible instruments
-brew "lxi-tools"
 # System information fetcher, with an emphasis on performance and minimalism
 brew "macchina"
 # Apple Silicon Monitor Top written in Go Lang
@@ -334,8 +334,6 @@ brew "openjdk"
 brew "openldap"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Perl compatible regular expressions library
-brew "pcre"
 # Utility which converts PDF files into HTML and XML formats
 brew "pdftohtml"
 # Tool for interacting with RP2040/RP2350 devices and binaries
@@ -360,6 +358,8 @@ brew "pstree"
 brew "python-lsp-server"
 # Python library for creating static, animated, and interactive visualizations
 brew "python-matplotlib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Tensors and dynamic neural networks
 brew "pytorch"
 # Generic machine emulator and virtualizer
@@ -468,8 +468,6 @@ brew "scottylogan/brewhouse/galasm"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Classic After Dark screensaver set
-cask "after-dark-classic"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Tool for linking with Bambu Lab 3D printers
@@ -481,8 +479,6 @@ cask "charles"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 cask "container"
-# Terminal emulator mimicking the old cathode display
-cask "cool-retro-term"
 # Logic designer and circuit simulator
 cask "digital"
 # Voice and text chat software
@@ -575,8 +571,6 @@ cask "kdiff3"
 cask "kicad"
 # Discover, download, and run local LLMs
 cask "lm-studio"
-# Digital logic designer and simulator
-cask "logisim-evolution"
 # SPICE simulation software, schematic capture and waveform viewer
 cask "ltspice"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
@@ -612,14 +606,14 @@ cask "zoom"
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
 mas "Numbers", id: 409203825
 mas "Numbers Creator Studio", id: 361304891
-mas "Pages", id: 409201541
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 go "github.com/766b/go-outliner"
 go "github.com/cweill/gotests/gotests"
 go "golang.org/x/tools/cmd/goyacc"
