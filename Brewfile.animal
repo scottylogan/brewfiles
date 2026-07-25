@@ -614,7 +614,19 @@ mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
 mas "Pages", id: 361309726
-go "github.com/766b/go-outliner"
+go "github.com/kisielk/errcheck"
+go "github.com/davidrjenni/reftools/cmd/fillstruct"
+go "github.com/uudashr/gocognit/cmd/gocognit"
+go "github.com/fzipp/gocyclo/cmd/gocyclo"
+go "golang.org/x/lint/golint"
+go "github.com/fatih/gomodifytags"
+go "golang.org/x/tools/cmd/gorename"
+go "github.com/gojp/goreportcard/cmd/goreportcard-cli"
 go "github.com/cweill/gotests/gotests"
+go "github.com/gordonklaus/ineffassign"
+go "github.com/client9/misspell/cmd/misspell"
+go "github.com/coolamit/mermaid-cli/cmd/mmd-cli"
+go "golang.org/x/pkgsite/cmd/pkgsite"
+go "github.com/xuri/xgen/cmd/xgen"
 npm "@google/gemini-cli"
 npm "corepack"
