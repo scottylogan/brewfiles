@@ -13,6 +13,7 @@ tap "osx-cross/openocd", trusted: true
 tap "riscv-software-src/riscv", trusted: true
 tap "rosco-m68k/toolchain", trusted: true
 tap "scottylogan/brewhouse", trusted: true
+tap "terraform-linters/tap"
 tap "weaveworks/tap", trusted: true
 # Crossassembler for multiple environments
 brew "acme"
@@ -178,6 +179,8 @@ brew "ghostscript"
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
 # Command-line option parsing utility
@@ -589,6 +592,8 @@ cask "raspberry-pi-imager"
 cask "raycast"
 # 3D modeling software used to create and manipulate 3D models
 cask "sketchup"
+# Pluggable Terraform linter
+cask "terraform-linters/tap/tflint", trusted: true
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
@@ -606,14 +611,14 @@ cask "zoom"
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
-mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
-mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 go "github.com/kisielk/errcheck"
 go "github.com/davidrjenni/reftools/cmd/fillstruct"
 go "github.com/uudashr/gocognit/cmd/gocognit"
