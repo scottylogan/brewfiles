@@ -82,6 +82,8 @@ brew "eza"
 brew "fastfetch"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# Database version control to control migrations
+brew "flyway"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU awk utility
@@ -246,6 +248,8 @@ brew "ripgrep"
 brew "rpm"
 # Command-line tool for the Amazon S3 service
 brew "s3cmd"
+# XSLT and XQuery processor
+brew "saxon"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Simple tool to count source lines of code
@@ -318,6 +322,8 @@ cask "charles"
 cask "claude-code"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
+# OpenJDK distribution from Amazon
+cask "corretto@17"
 # UI for creating Windows installer ISO from UUPDump
 cask "crystalfetch"
 # Universal database tool and SQL client
@@ -335,6 +341,7 @@ cask "font-fira-code-nerd-font"
 cask "font-google-sans-code"
 cask "font-hack"
 cask "font-hack-nerd-font"
+cask "font-ibm-plex-mono"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
 cask "font-monaspace"
@@ -351,6 +358,8 @@ cask "ghostty"
 cask "gitup-app"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -361,6 +370,8 @@ cask "lm-studio"
 cask "marked-app"
 # Visual communication software
 cask "omnigraffle"
+# Cloud storage client
+cask "onedrive"
 cask "powershell"
 # Control your tools with a few keystrokes
 cask "raycast"
@@ -377,21 +388,27 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
+mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Xcode", id: 497799835
 vscode "continue.continue"
 vscode "golang.go"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-mssql.data-workspace-vscode"
+vscode "ms-mssql.mssql"
+vscode "ms-mssql.sql-bindings-vscode"
+vscode "ms-mssql.sql-database-projects-vscode"
 vscode "renesaarsoo.sql-formatter-vsc"
 go "github.com/kisielk/errcheck"
 go "github.com/davidrjenni/reftools/cmd/fillstruct"
+go "github.com/sters/go-file-splitter"
 go "golang.org/dl/go1.26rc2"
 go "github.com/uudashr/gocognit/cmd/gocognit"
 go "github.com/fzipp/gocyclo/cmd/gocyclo"
