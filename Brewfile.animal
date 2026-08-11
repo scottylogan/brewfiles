@@ -271,6 +271,10 @@ brew "libedit"
 brew "licensor"
 # Linux virtual machines
 brew "lima"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Additional guest agents for Lima
+brew "lima-additional-guestagents"
 # Extensible Cyclomatic Complexity Analyzer
 brew "lizard-analyzer"
 # Clone of ls with colorful output, file type icons, and more
@@ -365,8 +369,6 @@ brew "python-matplotlib"
 brew "python@3.11"
 # Tensors and dynamic neural networks
 brew "pytorch"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Client/server application for remote execution of tasks
 brew "remctl"
 # Rust toolchain installer
