@@ -249,6 +249,8 @@ brew "ipcalc"
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Bootstrapping and management tool for k0s clusters
+brew "k0sctl"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Static analysis tool for Kubernetes YAML files and Helm charts
@@ -415,6 +417,8 @@ brew "teensy_loader_cli"
 brew "telnet"
 # OpenTofu / Terraform / Terragrunt / Terramate / Atmos version manager
 brew "tenv"
+# Tool to generate documentation from Terraform modules
+brew "terraform-docs"
 # Terraform Language Server
 brew "terraform-ls"
 # Static analysis security scanner for your terraform code
