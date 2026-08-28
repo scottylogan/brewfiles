@@ -196,6 +196,8 @@ brew "molecule"
 brew "moreutils"
 # Turn marked-up plain text into well-formatted documents
 brew "multimarkdown"
+# Lightweight PDF and XPS viewer
+brew "mupdf"
 # Utility for managing network connections
 brew "netcat"
 # Port scanning utility for large networks
@@ -258,6 +260,8 @@ brew "sloc"
 brew "socket_vmnet"
 # Generate type safe Go from SQL
 brew "sqlc"
+# Microsoft SQL Server command-line interface
+brew "sqlcmd"
 # Cross-shell prompt for astronauts
 brew "starship"
 # State of the art linter for the Go programming language
@@ -331,7 +335,7 @@ cask "dbeaver-community"
 # Developer platform
 cask "dotnet-sdk"
 # GNU Emacs text editor
-cask "jimeh/emacs-builds/emacs-app"
+cask "jimeh/emacs-builds/emacs-app", trusted: true
 # Web browser
 cask "firefox"
 cask "font-caskaydia-mono-nerd-font"
@@ -352,6 +356,7 @@ cask "font-museo"
 cask "font-sauce-code-pro-nerd-font"
 cask "font-sf-mono"
 cask "font-sf-mono-nerd-font-ligaturized"
+cask "font-symbols-only-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Git interface focused on visual interaction
@@ -362,8 +367,6 @@ cask "google-chrome"
 cask "google-drive"
 # Tools to protect your emails and files
 cask "gpg-suite"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2@beta"
 # Discover, download, and run local LLMs
 cask "lm-studio"
 # Previewer for Markdown, MultiMarkdown and other text markup languages
@@ -390,6 +393,7 @@ cask "xquartz"
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
