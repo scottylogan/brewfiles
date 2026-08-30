@@ -327,6 +327,8 @@ brew "nodenv"
 brew "noti"
 # Network Time Protocol (NTP) Distribution
 brew "ntp"
+# Network UPS Tools: Support for various power devices
+brew "nut"
 # Network performance measurement tool
 brew "nuttcp"
 # VHDL compiler and simulator
@@ -495,7 +497,7 @@ cask "discord"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # GNU Emacs text editor
-cask "jimeh/emacs-builds/emacs-app"
+cask "jimeh/emacs-builds/emacs-app", trusted: true
 cask "font-anonymous-pro"
 cask "font-benchnine"
 cask "font-cantarell"
@@ -617,14 +619,14 @@ cask "zoom"
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Kindle", id: 302584613
 mas "Logic Pro", id: 634148309
-mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
+mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 go "github.com/kisielk/errcheck"
 go "github.com/davidrjenni/reftools/cmd/fillstruct"
 go "github.com/uudashr/gocognit/cmd/gocognit"
