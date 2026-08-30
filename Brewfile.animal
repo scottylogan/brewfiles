@@ -307,6 +307,8 @@ brew "minipro"
 brew "moreutils"
 # Tools for manipulating MSDOS files
 brew "mtools"
+# Lightweight PDF and XPS viewer
+brew "mupdf"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
 # FTP client with an advanced user interface
