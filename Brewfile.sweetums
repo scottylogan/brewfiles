@@ -378,14 +378,14 @@ cask "onedrive"
 cask "powershell"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Remote desktop application focusing on security
+cask "realvnc-connect-viewer"
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
 cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Connect to Windows
 cask "windows-app"
 # Open-source version of the X.Org X Window System
