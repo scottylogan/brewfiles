@@ -6,6 +6,7 @@ tap "ericschmar/tap", trusted: true
 tap "hashicorp/tap", trusted: true
 tap "jimeh/emacs-builds", trusted: true
 tap "nodenv/nodenv", trusted: true
+tap "pgplex/pgschema", trusted: true
 tap "scottylogan/brewhouse", trusted: true
 tap "weaveworks/tap", trusted: true
 # General-purpose data compression with high compression ratio
@@ -227,7 +228,7 @@ brew "postgresql@15", restart_service: :changed
 # Serves a fully RESTful API from any existing PostgreSQL database
 brew "postgrest"
 # Command-line shell and scripting language
-brew "powershell", link: false
+brew "powershell"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Service monitoring system and time series database
@@ -274,6 +275,8 @@ brew "swagger-codegen"
 brew "telnet"
 # OpenTofu / Terraform / Terragrunt / Terramate / Atmos version manager
 brew "tenv"
+# Render Mermaid diagrams in the terminal
+brew "termaid"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
 # Terraform Language Server
@@ -375,6 +378,8 @@ cask "marked-app"
 cask "omnigraffle"
 # Cloud storage client
 cask "onedrive"
+# Smart card libraries and utilities
+cask "opensc-app"
 cask "powershell"
 # Control your tools with a few keystrokes
 cask "raycast"
@@ -400,6 +405,7 @@ mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
 mas "Pages", id: 361309726
+mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 vscode "continue.continue"
 vscode "golang.go"
