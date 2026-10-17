@@ -51,6 +51,8 @@ brew "buildkit"
 brew "bzip2"
 # JSON Schema CLI
 brew "check-jsonschema"
+# Linter/analyzer for Makefiles
+brew "checkmake"
 # Cross-platform make
 brew "cmake"
 # Manage local application configuration files using templates
@@ -385,6 +387,8 @@ cask "powershell"
 cask "raycast"
 # Remote desktop application focusing on security
 cask "realvnc-connect-viewer"
+# CLI to create, run, and deploy Slack apps
+cask "slack-cli"
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
@@ -396,15 +400,14 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Keynote", id: 361285480
+mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
-mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 vscode "continue.continue"
