@@ -77,6 +77,8 @@ brew "docker-compose"
 brew "docker-credential-helper"
 # Text processing system for reStructuredText
 brew "docutils"
+# .NET Core
+brew "dotnet@8"
 # AST-based pattern checker for JavaScript
 brew "eslint"
 # Modern, maintained replacement for ls
@@ -193,8 +195,6 @@ brew "mariadb"
 brew "mas"
 # Minifier for HTML, CSS, JS, JSON, SVG, and XML
 brew "minify"
-# Automated testing for Ansible roles
-brew "molecule"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Turn marked-up plain text into well-formatted documents
@@ -293,6 +293,8 @@ brew "typescript"
 brew "typescript-language-server"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Internet file retriever
@@ -305,6 +307,10 @@ brew "xmlsectool"
 brew "yamllint"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig@0.15"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # The AI coding agent built for the terminal.
@@ -353,6 +359,8 @@ cask "font-hack-nerd-font"
 cask "font-ibm-plex-mono"
 cask "font-iosevka-term-nerd-font"
 cask "font-iosevka-term-slab-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-meslo-lg-nerd-font"
 cask "font-monaspace"
 cask "font-monaspace-frozen"
 cask "font-monaspace-nf"
@@ -400,14 +408,12 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft Word", id: 462054704
+mas "Keynote", id: 361285480
 mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 vscode "continue.continue"
