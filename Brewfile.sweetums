@@ -372,8 +372,6 @@ cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-symbols-only-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Git interface focused on visual interaction
-cask "gitup-app"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -408,12 +406,12 @@ cask "windows-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
+mas "Keynote", id: 361285480
 mas "Numbers", id: 361304891
-mas "Pages", id: 361309726
+mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 vscode "continue.continue"
