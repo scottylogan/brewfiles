@@ -485,6 +485,8 @@ brew "scottylogan/brewhouse/galasm"
 brew "scottylogan/brewhouse/misc-scripts"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Microsoft Azure CLI 2.0
+cask "azure-cli"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Tool for linking with Bambu Lab 3D printers
